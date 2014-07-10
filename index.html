@@ -40,11 +40,11 @@
             for	(i = 0; i < ids.length; i++)
             {
                 var e = document.getElementById(ids[i]);
-                if(ids[i]==id)
+                if(ids[i]==id || ids[i]=='projects')
                     e.style.display = 'block';
                 else
                 {
-                    if(ids[i].indexOf("subprojects-") > -1)
+                    //if(ids[i].indexOf("subprojects-") > -1)
                     {
                         var e2 = document.getElementById(ids[i]);
                         e2.style.display = "none";
@@ -52,24 +52,24 @@
                 }
             }
         }
+        else if(id=="projects")
+        {
+        	 var e2 = document.getElementById("subprojects");
+			 if(e2.style.display == "none")
+				e2.style.display = "block";
+			 else
+				e2.style.display = "none";
+        
+        }
         else
         {
-            var project_clicked = 0;
+            //var project_clicked = 0;
             for	(i = 0; i < ids.length; i++)
             {
                 var e = document.getElementById(ids[i]);
                 if(ids[i]==id)
                 {
-                    e.style.display = 'block';
-                    if(ids[i]=="projects")
-                    {
-                        var e2 = document.getElementById("subprojects");
-                        if(e2.style.display == "none")
-                            e2.style.display = "block";
-                        else
-                            e2.style.display = "none";
-                        project_clicked = 1;
-                    }
+	                e.style.display = 'block';
                 }
                 else
                 {
@@ -79,14 +79,11 @@
                         var e2 = document.getElementById("subprojects");
                         e2.style.display = "none";
                     }
-                    if(project_clicked==1&&ids[i]=="subprojects-gdi")
-                    {
-                        var e3 = document.getElementById("subprojects-gdi");
-                        e3.style.display = "block";
-                    }
+                   
                 }
              }
         }
+       
     }
  //->
 
@@ -103,19 +100,19 @@
         <a href="#projects" onclick="toggle_visibility('projects');"><h3>projects</h3></a>
 
         <div id="subprojects" style="display:none;padding-left:1em;">
-            <a href="#sprojects" onclick="toggle_visibility('subprojects-gdi');"><h5>Geospatial Data
+            <a href="#projects" onclick="toggle_visibility('subprojects-gdi');"><h5>Geospatial Data
                 Integration</h5></a>
             <a href="#projects" onclick="toggle_visibility('subprojects-trm');"><h5>Text Recognition in Maps</h5>
             </a>
-            <a href="#sprojects" onclick="toggle_visibility('subprojects-rvm');"><h5>Road Vectorization from
+            <a href="#projects" onclick="toggle_visibility('subprojects-rvm');"><h5>Road Vectorization from
                 Maps</h5></a>
             <a href="#projects" onclick="toggle_visibility('subprojects-srm');"><h5>Symbol Recognition in
                 Maps</h5></a>
             <a href="#projects" onclick="toggle_visibility('subprojects-lms');"><h5>Linking Maps</h5></a>
         </div>
-        <a href="#people2" onclick="toggle_visibility('people');"><h3>people</h3></a>
-        <a href="#publications2" onclick="toggle_visibility('publications');"><h3>publications</h3></a>
-        <a href="#join-us2" onclick="toggle_visibility('join-us');"><h3>join us</h3></a>
+        <a href="#people" onclick="toggle_visibility('people');"><h3>people</h3></a>
+        <a href="#publications" onclick="toggle_visibility('publications');"><h3>publications</h3></a>
+        <a href="#join-us" onclick="toggle_visibility('join-us');"><h3>join us</h3></a>
 
         <p></p>
 
