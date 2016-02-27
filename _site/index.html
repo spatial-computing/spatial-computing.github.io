@@ -1,0 +1,658 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="description" content="Welcome! We are a research team at Spatial Sciences Institute, University of Southern California.We develop computer algorithms and build applications to solve real world problems in <a
+            spatial sciences, including text recognition (OCR) in maps, symbol recognition from maps, and geospatial data integration, analysis, and mining.">
+    <title>spatial-computing.github.io by USC Spatial Computing</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <style>
+        @font-face {
+        font-family: 'National'; src: url('//www.usc.edu/assets/fonts/NationalWeb-Light.eot'); src: local(':)'),
+        url('//www.usc.edu/assets/fonts/NationalWeb-Light.woff') format('woff'),
+        url('//www.usc.edu/assets/fonts/NationalWeb-Light.ttf') format('truetype'),
+        url('//www.usc.edu/assets/fonts/NationalWeb-Light.svg') format('svg');
+        font-weight: 200;
+        font-style: normal;
+        }
+
+        .profile > li { width:140px; float:left;}
+        .profile .caption{ overflow :hidden; text-overflow:ellipsis; text-align: center;}
+        .profile .h3{ overflow :hidden; text-overflow:ellipsis; text-align: center; }
+        .profile img{ width:120px;}
+
+    </style>
+</head>
+
+<script type="text/javascript">
+<!--
+    var ids = ["who-we-are", "projects", "publications", "join-us","subprojects-gdi","subprojects-trm","subprojects-rvm","subprojects-srm","subprojects-lms"];
+
+    function toggle_visibility(id)
+    {
+        if(id.indexOf("subprojects-") > -1)
+        {
+            for	(i = 0; i < ids.length; i++)
+            {
+                var e = document.getElementById(ids[i]);
+                if(ids[i]==id || ids[i]=='projects')
+                    e.style.display = 'block';
+                else
+                {
+                    //if(ids[i].indexOf("subprojects-") > -1)
+                    {
+                        var e2 = document.getElementById(ids[i]);
+                        e2.style.display = "none";
+                    }
+                }
+            }
+        }
+        else if(id=="projects")
+        {
+        	 var e2 = document.getElementById("subprojects");
+			 if(e2.style.display == "none")
+				e2.style.display = "block";
+			 else
+				e2.style.display = "none";
+        
+        }
+        else
+        {
+            //var project_clicked = 0;
+            for	(i = 0; i < ids.length; i++)
+            {
+                var e = document.getElementById(ids[i]);
+                if(ids[i]==id)
+                {
+	                e.style.display = 'block';
+                }
+                else
+                {
+                    e.style.display = 'none';
+                    if(ids[i]=="projects")
+                    {
+                        var e2 = document.getElementById("subprojects");
+                        e2.style.display = "none";
+                    }
+                   
+                }
+             }
+        }
+       
+    }
+ //->
+
+
+</script>
+
+<body>
+<!-- Google Tag Manager -->
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-5LNVFK"
+height="0" width="0" style="display:block;visibility:hidden"></iframe></noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-5LNVFK');</script>
+<!-- End Google Tag Manager -->
+
+<div class="wrapper">
+    <header>
+
+        <h1>Spatial Computing</h1>
+        <h4>Spatial Sciences Institute, University of Southern California</h4>
+        <a href="#who-we-are" onclick="toggle_visibility('who-we-are');"><h3>who we are</h3></a>
+        <a href="#projects" onclick="toggle_visibility('projects');"><h3>projects</h3></a>
+
+        <div id="subprojects" style="display:block;padding-left:1em;">
+            <a href="#projects" onclick="toggle_visibility('subprojects-gdi');"><h5>Geospatial Data
+                Integration</h5></a>
+            <a href="#projects" onclick="toggle_visibility('subprojects-trm');"><h5>Text Recognition in Maps</h5>
+            </a>
+            <a href="#projects" onclick="toggle_visibility('subprojects-rvm');"><h5>Road Vectorization from
+                Maps</h5></a>
+            <a href="#projects" onclick="toggle_visibility('subprojects-srm');"><h5>Symbol Recognition in
+                Maps</h5></a>
+            <a href="#projects" onclick="toggle_visibility('subprojects-lms');"><h5>Linking Maps</h5></a>
+        </div>
+        
+        <a href="#publications" onclick="toggle_visibility('publications');"><h3>publications</h3></a>
+        <a href="#join-us" onclick="toggle_visibility('join-us');"><h3>join us</h3></a>
+
+        <p></p>
+
+        <p class="view"><a href="https://github.com/spatial-computing">View Our GitHub Profile</a></p>
+
+        <img src="img/SSI-RGB-hformal.png" width="100%">
+        <img src="img/PrimShield-Word_RegShieldRGB_CardOnTrans.png" width="100%">
+        <small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a>
+        </small>
+    </header>
+
+    <section id="who-we-are">
+        <h1>WHO WE ARE</h1>
+        We are a research team at <a href="http://spatial.usc.edu/" target="_blank">Spatial Sciences Institute</a>, <a
+            href="http://www.usc.edu/" target="_blank">University of Southern California</a>. We develop computer
+        algorithms and build applications to solve real world problems in <a
+            href="http://en.wikipedia.org/wiki/Spatial_science" target="_blank">spatial sciences.</a>
+        <h1>&nbsp;</h1>
+
+         <section id="people" >
+        <section>
+            <h1>current</h1>
+            <li style="list-style-type:none;">
+                <div class="profile">
+                    <img src="img/yaoyi.jpg" width="120">
+                    <div><a href="http://www.yoyoi.info" target="_blank"><b>Yao-Yi Chiang</b></a><h5>Assistant Professor
+                        (Research), USC Spatial Sciences Institute</h5></div>
+                </div>
+            </li>
+            <li style="list-style-type:none;">
+                <div class="profile">
+                    <img src="img/Vijayan-Balasubramanian.jpg" width="120">
+                    <div><a href="https://www.linkedin.com/in/vijayanb" target="_blank"><b>Vijayan Balasubramanian</b></a>
+                    <h5>Graduate Student, USC Data Informatics</h5></div>
+                </div>
+            </li>
+             <li style="list-style-type:none;">
+                <div class="profile">
+                    <img src="img/Weiwei_Duan.jpg" width="120">
+                    <div><b>Weiwei Duan</b>
+                    <h5>Graduate Student, USC Computer Science</h5></div>
+                </div>
+            </li>
+            <li style="list-style-type:none;">
+                <div class="profile">
+                    <img src="img/yuan-gao.jpg" width="120">
+                    <div><b>Yuan Gao</b>
+                    <h5>Associate Professor, Department of Information and Management, Northwest University, China</h5></div>
+                </div>
+            </li>
+             <li style="list-style-type:none;">
+                <div class="profile">
+                    <img src="img/1404880779_wooman.png" width="120">
+                    <div><a href="#" target="_blank"><b>Narges Honarvar Nazari</b></a><h5>Graduate Student, USC Computer
+                        Science</h5></div>
+                </div>
+            </li>
+            <li style="list-style-type:none;">
+                <div class="profile">
+                    <img src="img/Saarthak Khanna.jpg" width="120">
+                    <div><a href="https://www.linkedin.com/in/saarthak-khanna-48b62b90" target="_blank"><b>Saarthak Khanna</b></a>
+                    <h5>Graduate Student, USC Data Informatics</h5></div>
+                </div>
+            </li>
+            <li style="list-style-type:none;">
+                <div class="profile">
+                    <img src="img/Sumedha Kucherlapati.jpg" width="120">
+                    <div><a href="https://www.linkedin.com/in/kucherlapati-sumedha-a2040448" target="_blank"><b>Sumedha Kucherlapati</b></a>
+                    <h5>Graduate Student, USC Data Informatics</h5></div>
+                </div>
+            </li>
+            
+            <li style="list-style-type:none;">
+                <div class="profile">
+                    <img src="img/luo.jpg" width="120">
+                    <div><a href="https://www.linkedin.com/in/zexuan-luo-276433b1" target="_blank"><b>Zexuan Luo</b></a>
+                        <h5>Graduate Student, USC Computer Science</h5></div>
+                </div>
+            </li>
+            
+            <li style="list-style-type:none;">
+                <div class="profile">
+                    <img src="img/Sanjay-Singh.jpg" width="120">
+                    <div><a href="https://www.linkedin.com/in/cjsanjay" target="_blank"><b>Sanjay Singh</b></a>
+                        <h5>Graduate Student, USC Computer
+                        Science</h5></div>
+                </div>
+            </li>
+            <li style="list-style-type:none;">
+                <div class="profile">
+                    <img src="img/Jakapun-Tachaiya.jpg" width="120">
+                    <div><b>Jakapun Tachaiya</b>
+                    <h5>Graduate Student, USC Data Informatics</h5></div>
+                </div>
+            </li>
+            <li style="list-style-type:none;">
+                <div class="profile">
+                    <img src="img/TianXiangTan.jpg" width="120">
+
+                    <div><a href="https://www.linkedin.com/in/tian-xiang-tan-24566ba9" target="_blank"><b>Tian Xiang Tan </b></a><h5>Graduate Student, USC Computer
+                        Science</h5></div>
+                </div>
+            </li>
+            
+            <li style="list-style-type:none;">
+                <div class="profile">
+                    <img src="img/wjh.png" width="120">
+
+                    <div><b>Jianhua Wu</b>
+                        <h5>Visiting Scholar, USC Spatial Sciences Institute</h5></div>
+                </div>
+            </li>
+            <li style="list-style-type:none;">
+                <div class="profile">
+                    <img src="img/ronald-yu.jpg" width="120">
+                    <div><b>Ronald Yu</b>
+                    <h5>Undergraduate Student, USC Computer
+                        Science</h5></div>
+                </div>
+            </li>
+
+            <li style="list-style-type:none;">
+                <div class="profile">
+                    <img src="img/1404880779_wooman.png" width="120">
+                    <div><b>Ying Zhang</b>
+                        <h5>Assistant Professor, North China Electric Power University, School of Control and Computing Engineering</h5></div>
+                </div>
+            </li>
+           
+            
+        </section>
+        <section>
+            <h1>affiliate USC faculty</h1>
+
+            <li style="list-style-type:none;">
+                <div class="profile">
+                    <img src="img/CraigKnoblock.jpg" width="120">
+
+                    <div><a href="http://www.isi.edu/integration/people/knoblock/" target="_blank"><b>Craig Knoblock</b></a>
+                        <h5> Director of Information Integration, USC Information Sciences Institute<br>Research
+                            Professor, USC Computer Science</h5></div>
+                </div>
+            </li>
+        </section>
+        <section>
+            <h1>alumni</h1>
+            <h5>2015</h5>
+            <li style="list-style-type:none;">
+                <div class="profile">
+                    <img src="img/robin.jpg" width="120">
+                    <div><b>Robin Franke</b>
+                    <h5>Undergraduate Student, USC GeoDesign</h5></div>
+                </div>
+            </li>
+            <li style="list-style-type:none;">
+                <div class="profile">
+                    <img src="img/1404880770_man.png" width="120">
+                    <div><b>Alex Chen</b>
+                    <h5>Undergraduate Student, USC GeoDesign</h5></div>
+                </div>
+            </li>
+            <li style="list-style-type:none;">
+                <div class="profile">
+                    <img src="img/1404880770_man.png" width="120">
+                    <div><b>Leonard Ngo</b>
+                    <h5>Undergraduate Student, USC GeoDesign</h5></div>
+                </div>
+            </li>
+            <li style="list-style-type:none;">
+                <div class="profile">
+                    <img src="img/1404880770_man.png" width="120">
+                    <div><b>Kuangyu Xiong</b>
+                    <h5>Undergraduate Student, USC Architecture</h5></div>
+                </div>
+            </li>
+            <li style="list-style-type:none;">
+                <div class="profile">
+                    <img src="img/1404880779_wooman.png" width="120">
+                    <div><b>Yi Hou</b>
+                    <h5>Undergraduate Student, USC GeoDesign</h5></div>
+                </div>
+            </li>
+            <li style="list-style-type:none;">
+                <div class="profile">
+                    <img src="img/rashmina.jpg" width="120">
+                    <div><a href="https://www.linkedin.com/in/rashminarmenon" target="_blank"><b>Rashmina Ramachandran Menon</b></a><h5>Graduate Student, USC Computer Science</h5>
+                    </div>
+                </div>
+            </li>
+             <li style="list-style-type:none;">
+                <div class="profile">
+                    <img src="img/ZebaoZhang.jpg" width="120">
+                    <div><b>Zebao Zhang</b>
+                        <h5>Visiting Scholar, USC Spatial Sciences Institute</h5></div>
+                </div>
+            </li>
+            <li style="list-style-type:none;">
+                <div class="profile">
+                    <img src="img/nilesh.JPG" width="120">
+
+                    <div><a href="#" target="_blank"><b>Nilesh Gupta</b></a><h5>Graduate Student, USC Electrical Engineering</h5></div>
+                </div>
+            </li>
+            <li style="list-style-type:none;">
+                <div class="profile">
+                    <img src="img/Yamini_Goyal.jpg" width="120">
+                    <div><b>Yamini Goyal</b>
+                        <h5>Graduate Student, USC Computer
+                        Science</h5></div>
+                </div>
+            </li>
+            <li style="list-style-type:none;">
+                <div class="profile">
+                    <img src="img/Andrew-Hsu.jpg" width="120">
+                    <div><b>Andrew Hsu</b><h5>Palos Verdes Peninsula High School</h5></div>
+                </div>
+            </li>
+            <li style="list-style-type:none;">
+                <div class="profile">
+                    <img src="img/1404880770_man.png" width="120">
+                    <div><b>Wilson Franca De Souza</b>
+                        <h5>Undergraduate Student, Humboldt State University, Environmental Resources Engineering</h5></div>
+                </div>
+            </li>
+            <li style="list-style-type:none;">
+                <div class="profile">
+                    <img src="img/YangMeng.jpg" width="120">
+
+                    <div><a href="#" target="_blank"><b>Yang Meng</b></a><h5>Graduate Student, USC Data Science</h5>
+                    </div>
+                </div>
+            </li>
+            <li style="list-style-type:none;">
+                <div class="profile">
+                    <img src="img/woojin-park.jpg" width="120">
+
+                    <div><b>Woojin Park</b>
+                        <h5>Visiting Scholar, USC Spatial Sciences Institute</h5></div>
+                </div>
+            </li>
+            <li style="list-style-type:none;">
+                <div class="profile">
+                    <img src="img/sima.jpg" width="120">
+
+                    <div><a href="https://www.linkedin.com/pub/sima-k-moghaddam/85/539/529" target="_blank"><b>Sima
+                        Moghaddam</b></a><h5>Graduate Student, USC Computer Science</h5></div>
+                </div>
+            </li>
+           
+             <li style="list-style-type:none;">
+                <div class="profile">
+                    <img src="img/haohan.jpg" width="120">
+
+                    <div><a href="http://haohany.github.io/" target="_blank"><b>Haohan Yang</b></a><h5>Graduate Student, USC Computer
+                        Science</h5></div>
+                </div>
+            </li>
+
+			<h5>2014</h5>
+			<li style="list-style-type:none;">
+                <div class="profile">
+                    <img src="img/AkshayAnand.jpg" width="120">
+
+                    <div><a href="https://sites.google.com/site/akshayanandprofile/" target="_blank"><b>Akshay Anand</b></a>
+                        <h5>Esri (Previously Graduate Student, USC Computer Science)</h5></div>
+                </div>
+            </li>
+            <li style="list-style-type:none;">
+                <div class="profile">
+                    <img src="img/ramtinBoustani.jpg" width="120">
+
+                    <div><a href="https://www.linkedin.com/in/ramtinboustani" target="_blank"><b>Ramtin Boustani</b></a>
+                        <h5>Graduate Student, USC Computer Science</h5></div>
+                </div>
+            </li>
+            <li style="list-style-type:none;">
+                <div class="profile">
+                    <img src="img/RenukaFernandes.jpg" width="120">
+
+                    <div><a href="https://www.linkedin.com/pub/renuka-fernandes/5a/310/b66" target="_blank"><b>Renuka
+                        Fernandes</b></a><h5>Undergraduate Student, USC Electrical Engineering</h5></div>
+                </div>
+            </li>
+            <li style="list-style-type:none;">
+                <div class="profile">
+                    <img src="img/sanjauli-gupta.jpg" width="120">
+
+                    <div><a href="https://www.linkedin.com/pub/sanjauli-gupta/22/841/b84" target="_blank"><b>Sanjauli
+                        Gupta</b></a><h5>Yahoo (Previously Graduate Student, USC Computer Science)</h5></div>
+                </div>
+            </li>
+            <li style="list-style-type:none;">
+                <div class="profile">
+                    <img src="img/jizhe-zhou-small.jpg" width="120">
+                    <div><b>Jizhe Zhou</b><h5>Undergraduate Student, Electronics and Information Engineering, Beihang University (Beijing, China)</h5></div>
+                </div>
+            </li>
+            <h5>2013</h5>
+			<li style="list-style-type:none;">
+                <div class="profile">
+                    <img src="img/ketan-akade.jpg" width="100">
+
+                    <div><a href="http://www-scf.usc.edu/~akade/index.php" target="_blank"><b>Ketan
+                        Akade</b></a><h5>Yahoo (Previously Graduate Student, USC Computer Science)</h5></div>
+                </div>
+            </li>
+            <li style="list-style-type:none;">
+                <div class="profile">
+                    <img src="img/1404880779_wooman.png" width="120">
+
+                    <div><b>Cathy Ji
+                        </b><h5>Undergraduate Student, USC Computer Engineering</h5></div>
+                </div>
+            </li>
+            <li style="list-style-type:none;">
+                <div class="profile">
+                    <img src="img/1404880770_man.png" width="120">
+
+                    <div><a href="https://www.linkedin.com/in/chioh2014/xx" target="_blank"><b>Phokgoân Chio̍h</b></a>
+                        <h5></h5></div>
+                </div>
+            </li>
+            <li style="list-style-type:none;">
+                <div class="profile">
+                    <img src="img/1404880770_man.png" width="120">
+
+                    <div><a href="https://www.linkedin.com/in/pjogani" target="_blank"><b>Parin Jogani</b></a><h5>
+                        Ebay (Previously Graduate Student, USC Computer Science)</h5></div>
+                </div>
+            </li>
+            <li style="list-style-type:none;">
+                <div class="profile">
+                    <img src="img/1404880770_man.png" width="120">
+
+                    <div><a href="https://www.linkedin.com/in/shrikanthn" target="_blank"><b>Shrikanth Narayanan</b></a><h5>Graduate Student, USC Data Science</h5>
+                    </div>
+                </div>
+            </li>
+            <li style="list-style-type:none;">
+                <div class="profile">
+                    <img src="img/1404880770_man.png" width="120">
+                    <div><a href="https://www.linkedin.com/in/ashishshirode" target="_blank"><b>Ashish Shirode</b></a>
+                        <h5>Intel (Previously Graduate Student, USC Computer Science)</h5></div>
+                </div>
+            </li>
+        </section>
+            <h1 id="projects2">&nbsp;</h1>
+           <h1 id="subprojects-gdi2">&nbsp;</h1>
+    </section>
+    </section>
+    
+    <section id="projects" style="display:block;">
+        <h1>PROJECTS</h1>
+        <section id="subprojects-gdi">
+            <h3>Geospatial Data Integration</h3>
+            <li>
+            <h3>Spatiotemporal Data Mining Using Heterogeneous Geospatial Sources</h3>
+            Given the various representations of geographic entities in heterogeneous data sources (e.g., a building can be a point or a polygon; building names can be store in a column called “name” or “name_eng”), a challenging problem is how to efficiently provide semantic descriptions for datasets from a large variety of sources to support machine learning and/or data mining tasks. In this joint effort with the BAE Systems, we are building an end-to-end approach that enables efficient modeling of spatiotemporal datasets from heterogeneous sources for performing analytical tasks on the modeled datasets
+            </li>
+             <br>
+            <li>
+            <h3>Modeling and visualizing geospatial data: <a href="https://github.com/InformationIntegrationGroup/Web-Karma/wiki/Working-with-geospatial-data" target="_blank">Karma</a></h3>
+            <img src="img/geoimage29.png" width="100%">
+            </li>
+            <br>
+            <li>
+                <h3>Efficient cleaning and transformation of geospatial data attributes: ArcKarma (an Esri ArcGIS plugin)</h3>
+            <img src="img/arckarma.jpg" width="100%">
+            </li>
+            <br>
+            
+            <h1 id="subprojects-trm2">&nbsp;</h1>
+        </section>
+
+        <section id="subprojects-trm" style="display:block;">
+            <h3>Text Recognition in Maps (OCR for Maps)</h3>
+            <li>
+                <h4>Overall approach:</h4>
+            <img src="img/text.png" width="100%"><br>
+            <iframe width="640" height="480" src="//www.youtube.com/embed/VqdSieR4fxY" frameborder="0" allowfullscreen></iframe>
+            </li>
+            <li>
+                <h4>Generating geonames from map images: ArcStrabo (an Esri ArcGIS plugin) (OCR for Maps) </h4>
+            <img src="img/arcstrabo.jpg" width="100%">
+            <iframe width="640" height="480" src="//www.youtube.com/embed/OH4QSGSAlYo" frameborder="0" allowfullscreen></iframe>
+            </li>
+            <li>
+                <h4>Generating named road vector data from map images (sample results)<br></h4>
+                <img src="img/tr1.jpg" width="100%">
+                <img src="img/tr2.jpg" width="100%">
+            </li>
+            <h1 id="subprojects-rvm2">&nbsp;</h1>
+        </section>
+
+        <section id="subprojects-rvm" style="display:block;">
+            <h3>Road Vectorization from Maps</h3>
+            <li>
+                <h4>Overall approach:</h4>
+            <img src="img/road.png" width="100%"><br>
+            </li>
+            <li>
+                <h4>Sample results:<br></h4>
+            <img src="img/road2.png" width="100%"><br>
+            <img src="img/road1.png" width="100%">
+            </li>
+            <h1 id="subprojects-srm2">&nbsp;</h1>
+        </section>
+        <section id="subprojects-srm" style="display:block;">
+            <h3>Symbol Recognition in Maps [<a href="https://github.com/spatial-computing/strabo-symbol-recognition" target="_blank">Repository</a>]</h3>
+            <li><h4>Overall approach:<br></h4>
+                <h4>1. Take a scanned map...(here shows an USGS historical topographic map)<br></h4>
+            <img src="img/test.jpg" width="100%">
+                <h4>and a symbol example</h4>
+            <img src="img/symbol2.jpg" width="148"><br>
+                <h4>2. Automatically identify map symbols that look like the symbol example (the blue boxes)<br></h4>
+            <img src="img/symbol1.jpg" width="100%"> <br>
+            <iframe width="640" height="480" src="https://www.youtube.com/embed/gvTNKR7y8Y8" frameborder="0" allowfullscreen></iframe>
+            </li>
+            <h1 id="subprojects-lms2">&nbsp;</h1>
+        </section>
+        <section id="subprojects-lms" style="display:block;">
+            <h3>Linking Maps to Other Spatiotemporal Datasets</h3>
+            <li><h3>Linking Map Symbols to DBPedia:<br></h3>
+                <h4>1. Take a scanned map...<br></h4>
+            <img src="img/iraqmap.jpg" width="100%"><br>
+                    <h4>2. Automatically identify hotel symbols and link the symbol locations to DBpedia<br></h4>
+            <img src="img/iraqmap-linked.jpg" width="100%"><br>
+                        <h4>3. Linked locations in a GIS<br></h4>
+            <img src="img/iraqmap-linked-gis.png" width="100%">
+            </li>
+            <br><br>
+            <li>
+                <h3>Linking Historical Maps to USC Shoah Foundation Visual History Archive:</h3>
+The Visual History Archive (VHA) in the USC Shoah Foundation contains a large digital life story collection of survivors before, during, and after the Holocaust and other genocides. Currently, location information (e.g., place names) mentioned in the VHA is indexed by keywords. For example, using “Poland” as the keyword for place search on the VHA Online returns 5,325 indexing terms in which the indexing terms (place names) with verified locations are displayed in a Google Maps web interface. Since place names and administration boundaries can change significantly over time, displaying search results on a current map would not provide the best visualization tool for navigating the VHA digital collection through space and time. In addition, a number places mentioned (indexed) in the testimony could not be located due to the lack of historical sources for verifying the location information of these places. This limits the opportunity for researchers, educators, and the general public to access valuable VHA materials and prevents the VHA collection from being indexed and searched by advanced spatial queries (e.g., finding the testimonies mentioned cities or towns in Poland between 1930 and 1945).
+<br><br>
+Historical maps are a great source of detailed place information in the past. For example, during the World War II (WWII), the US Army Map Service (AMS) created around 40,000 maps covering a significant amount of the earth. Other map sources provide detailed historical pre- and post-WWII maps, such as the Polish mapping company, Centrum Kartografii, which offers pre-WWII maps of Poland with a comprehensive list of place names including towns, manufacturing plants, monuments, etc. These historical maps can be found in either paper or scanned (digital) format in map archives such as the David Rumsey Map Collection  or libraries including the USC Libraries,  UCLA Map Libraries,  Western Michigan Libraries,  and the Library of Congress. The problem we are addressing here is how to systematically and effectively link places mentioned in the VHA collection to relevant historical maps and other historical materials. 
+<br>
+<br>
+
+           <iframe width="640" height="480" src="https://www.youtube.com/embed/AKbHJO6PjJE" frameborder="0" allowfullscreen></iframe><br><b>Created by Andrew Hsu</b>
+           <br><a href="http://www.arcgis.com/apps/MapJournal/?appid=6c3b4136b9304df09c9adcf86dd30dd5"  target="_blank"><img src="img/peter.jpg" width="100%"></a><br><b>Created by Robin Franke</b>
+           <br><a href="http://www.arcgis.com/apps/MapJournal/index.html?appid=31149b21f3524681adc0f16cca64c9c5"  target="_blank"><img src="img/rwandan.jpg" width="100%"></a><br><b>Created by Alex Chen</b>
+            </li>
+        </section>
+        <h1 id="publications2">&nbsp;</h1>
+    </section>
+    
+   
+
+    <section id="publications" style="display:block;">
+        <h1>PUBLICATION</h1>
+        Journal Articles
+        <iframe frameborder="0" src='http://bibbase.org/show?bib=dl.dropboxusercontent.com%2Fu%2F992427%2Fyaoyi-journal.bib&group0=year' style="width:100%;height:560px"></iframe>
+        Peer-Reviewed Conference/Workshop Articles
+        <iframe frameborder="0" src='http://bibbase.org/show?bib=dl.dropboxusercontent.com%2Fu%2F992427%2Fyaoyi.bib&group0=year' style="width:100%;height:3200px"></iframe>
+        <h1 id="join-us2">&nbsp;</h1>
+    </section>
+
+    <section id="join-us" style="display:block;">
+        <h1>JOIN US</h1>
+        <section>
+            <h3>Hacking the SPACE!</h3>
+            We are always looking for students and summer interns to work on interesting problems in spatial science and
+            computer science. Please feel free to <a href="mailto:yaoyic@usc.edu?Subject=Hacking%20the%20SPACE"
+                                                     target="_top">send us an email</a> if you are interested to join
+            the team. <br><img src="img/team2015.JPG" width="500">
+        </section>
+
+        <section>
+            <h3>USC Graduate Students</h3>
+            Credit or non-credit, we simply ask you to put down at least 10 hours a week so that you will have enough
+            time to finish a cool project. You can also take the geospatial data integration course from CS department
+            to learn more about our research.
+        </section>
+        <section>
+            <h3>USC Undergraduate Students</h3>
+            We love to work with undergraduate students. Join us and gain experience in research and build some awesome
+            applications!
+        </section>
+        <section>
+            <h3>Visitors and Students from Other Schools (including international scholars and students)</h3>
+            We welcome visitors and students from other schools. We had great experience with international summer
+            interns in the past. Come work with us in Los Angeles and enjoy the nice weather!
+        </section>
+        <section>
+        <h3>Potential Research Topics</h3>
+<b> Exploiting online data sources to build accurate gazetteers from map scans</b><br>
+We are building automatic techniques to convert text labels in scanned maps into machine-readable text. Our current system utilizes <a href="https://code.google.com/p/tesseract-ocr/" target="_blank">Tesseract</a> for the task of optical character recognition (OCR), and the results could contain missing or incorrectly recognized characters. We are investigating scalable, accurate methods to improve the character recognition results using existing geographic names. The idea is to automatically compare the recognition results with existing geographic names and find the best match efficiently. These geographic names can come from public online sources such as OpenStreetMaps and DBPedia. 
+<br>
+<b> Type of position:</b> directed research
+<br>
+<b>Requirement:</b> excellent programming skills in C#, familiarity with fuzzy string comparison algorithms, familiarity with Elasticsearch and/or image processing is a plus.
+<br><br>
+<b> Building an accurate character recognition system</b><br>
+Optical character recognition (OCR) software such as the open source Tesseract uses a combination of techniques in machine learning, pattern recognition, and image processing. We are using Tesseract to convert text labels in hundreds of historical map scans into machine-readable text. We are investigating the best practice to train the underlying algorithms of Tesseract for efficiently recognizing specific font types and document layout.
+<br>
+<b> Type of position:</b> directed research
+<br>
+<b>Requirement:</b> excellent programming skills in C#, familiarity with image processing, familiarity with pattern recognition and/or machine learning is a big plus.
+<br><br>
+<b> Symbol recognition from map scans</b><br>
+We are investigating methods to automatically extract locations of cartographic symbols from map images.
+<br> 
+<b> Type of position:</b> directed research
+<br>
+<b>Requirement:</b> excellent programming skills in C#, familiarity with image processing, familiarity with pattern recognition and/or machine learning is a big plus.
+<br><br>
+<b>Image segmentation</b><br>
+Grouping similar colors in an image is very often the first step for object recognition from images. Existing image methods applied on document images do not always result in a clear representation of text in images. We are investigating efficient and effective methods that utilize both color and spatial distances between pixels to separate text from other object in a document image.
+<br>
+<b> Type of position:</b> directed research
+<br>
+<b>Requirement:</b> excellent programming skills in C#, familiarity with image processing and machine learning, familiarity with computer vision is a big plus.
+<br>
+
+        </section>
+    </section>
+</div>
+<script src="javascripts/scale.fix.js"></script>
+<!-- GoStats JavaScript Based Code -->
+<script type="text/javascript" src="http://gostats.com/js/counter.js"></script>
+<script type="text/javascript">_gos='c4.gostats.com';_goa=390939;
+_got=5;_goi=1;_gol='site hit counter';_GoStatsRun();
+</script>
+<noscript><a target="_blank" title="site hit counter"
+             href="http://gostats.com"><img alt="site hit counter"
+                                            src="http://c4.gostats.com/bin/count/a_390939/t_5/i_1/counter.png"
+                                            style="border-width:0"/></a></noscript>
+<!-- End GoStats JavaScript Based Code -->
+</body>
+</html>
