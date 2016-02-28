@@ -33,7 +33,7 @@
 
 <script type="text/javascript">
 <!--
-    var ids = ["who-we-are", "projects", "publications", "join-us","subprojects-gdi","subprojects-trm","subprojects-rvm","subprojects-srm","subprojects-lms"];
+    var ids = ["who-we-are", "projects", "publications", "join-us","subprojects-gdi","subprojects-trm","subprojects-rvm","subprojects-srm","subprojects-lms","subprojects-shoah"];
 
     function toggle_visibility(id)
     {
@@ -120,7 +120,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 Maps</h5></a>
             <a href="#projects" onclick="toggle_visibility('subprojects-srm');"><h5>Symbol Recognition in
                 Maps</h5></a>
-            <a href="#projects" onclick="toggle_visibility('subprojects-lms');"><h5>Linking Maps</h5></a>
+            <a href="#projects" onclick="toggle_visibility('subprojects-lms');"><h5>Linking Maps to Other Data Sources</h5></a>
+            <a href="#projects" onclick="toggle_visibility('subprojects-shoah');"><h5>Visualizing USC Shoah Fundation VHA with Spatial Information</h5></a>
         </div>
         
         <a href="#publications" onclick="toggle_visibility('publications');"><h3>publications</h3></a>
@@ -491,7 +492,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             </li>
             <br>
             <li>
-                <h3>Efficient cleaning and transformation of geospatial data attributes: ArcKarma (an Esri ArcGIS plugin)</h3>
+            <h3>Efficient cleaning and transformation of geospatial data attributes: ArcKarma (an Esri ArcGIS plugin)</h3>
             <img src="img/arckarma.jpg" width="100%">
             </li>
             <br>
@@ -555,19 +556,21 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                         <h4>3. Linked locations in a GIS<br></h4>
             <img src="img/iraqmap-linked-gis.png" width="100%">
             </li>
-            <br><br>
-            <li>
-                <h3>Linking Historical Maps to USC Shoah Foundation Visual History Archive:</h3>
-The Visual History Archive (VHA) in the USC Shoah Foundation contains a large digital life story collection of survivors before, during, and after the Holocaust and other genocides. Currently, location information (e.g., place names) mentioned in the VHA is indexed by keywords. For example, using “Poland” as the keyword for place search on the VHA Online returns 5,325 indexing terms in which the indexing terms (place names) with verified locations are displayed in a Google Maps web interface. Since place names and administration boundaries can change significantly over time, displaying search results on a current map would not provide the best visualization tool for navigating the VHA digital collection through space and time. In addition, a number places mentioned (indexed) in the testimony could not be located due to the lack of historical sources for verifying the location information of these places. This limits the opportunity for researchers, educators, and the general public to access valuable VHA materials and prevents the VHA collection from being indexed and searched by advanced spatial queries (e.g., finding the testimonies mentioned cities or towns in Poland between 1930 and 1945).
-<br><br>
-Historical maps are a great source of detailed place information in the past. For example, during the World War II (WWII), the US Army Map Service (AMS) created around 40,000 maps covering a significant amount of the earth. Other map sources provide detailed historical pre- and post-WWII maps, such as the Polish mapping company, Centrum Kartografii, which offers pre-WWII maps of Poland with a comprehensive list of place names including towns, manufacturing plants, monuments, etc. These historical maps can be found in either paper or scanned (digital) format in map archives such as the David Rumsey Map Collection  or libraries including the USC Libraries,  UCLA Map Libraries,  Western Michigan Libraries,  and the Library of Congress. The problem we are addressing here is how to systematically and effectively link places mentioned in the VHA collection to relevant historical maps and other historical materials. 
-<br>
-<br>
-
+            <h1 id="subprojects-shoah2">&nbsp;</h1>
+        </section>
+        <section id="subprojects-shoah" style="display:block;">
+        	<h3>Linking Historical Maps to USC Shoah Foundation Visual History Archive:</h3>
+			<li>The Visual History Archive (VHA) in the USC Shoah Foundation contains a large digital life story collection of survivors before, during, and after the Holocaust and other genocides. Currently, location information (e.g., place names) mentioned in the VHA is indexed by keywords. For example, using “Poland” as the keyword for place search on the VHA Online returns 5,325 indexing terms in which the indexing terms (place names) with verified locations are displayed in a Google Maps web interface. Since place names and administration boundaries can change significantly over time, displaying search results on a current map would not provide the best visualization tool for navigating the VHA digital collection through space and time. In addition, a number places mentioned (indexed) in the testimony could not be located due to the lack of historical sources for verifying the location information of these places. This limits the opportunity for researchers, educators, and the general public to access valuable VHA materials and prevents the VHA collection from being indexed and searched by advanced spatial queries (e.g., finding the testimonies mentioned cities or towns in Poland between 1930 and 1945).
+			<br><br>
+			Historical maps are a great source of detailed place information in the past. For example, during the World War II (WWII), the US Army Map Service (AMS) created around 40,000 maps covering a significant amount of the earth. Other map sources provide detailed historical pre- and post-WWII maps, such as the Polish mapping company, Centrum Kartografii, which offers pre-WWII maps of Poland with a comprehensive list of place names including towns, manufacturing plants, monuments, etc. These historical maps can be found in either paper or scanned (digital) format in map archives such as the David Rumsey Map Collection  or libraries including the USC Libraries,  UCLA Map Libraries,  Western Michigan Libraries,  and the Library of Congress. The problem we are addressing here is how to systematically and effectively link places mentioned in the VHA collection to relevant historical maps and other historical materials. 
+			</li>
+			<br>
+			<br>
+			<li>
            <iframe width="640" height="480" src="https://www.youtube.com/embed/AKbHJO6PjJE" frameborder="0" allowfullscreen></iframe><br><b>Created by Andrew Hsu</b>
            <br><a href="http://www.arcgis.com/apps/MapJournal/?appid=6c3b4136b9304df09c9adcf86dd30dd5"  target="_blank"><img src="img/peter.jpg" width="100%"></a><br><b>Created by Robin Franke</b>
            <br><a href="http://www.arcgis.com/apps/MapJournal/index.html?appid=31149b21f3524681adc0f16cca64c9c5"  target="_blank"><img src="img/rwandan.jpg" width="100%"></a><br><b>Created by Alex Chen</b>
-            </li>
+           </li>
         </section>
         <h1 id="publications2">&nbsp;</h1>
     </section>
@@ -587,7 +590,7 @@ Historical maps are a great source of detailed place information in the past. Fo
         <h1>JOIN US</h1>
         <section>
             <h3>Hacking the SPACE!</h3>
-            We are always looking for students and summer interns to work on interesting problems in spatial science and
+            We are always looking for students and summer interns to work on interesting problems in spatial science, data science,
             computer science. Please feel free to <a href="mailto:yaoyic@usc.edu?Subject=Hacking%20the%20SPACE"
                                                      target="_top">send us an email</a> if you are interested to join
             the team. <br><img src="img/team2015.JPG" width="500">
@@ -595,7 +598,7 @@ Historical maps are a great source of detailed place information in the past. Fo
 
         <section>
             <h3>USC Graduate Students</h3>
-            Credit or non-credit, we simply ask you to put down at least 10 hours a week so that you will have enough
+            Credit or non-credit (Computer Science, Data Informatics, or GIST studetns), we simply ask you to put down at least 10 hours a week so that you will have enough
             time to finish a cool project. You can also take the geospatial data integration course from CS department
             to learn more about our research.
         </section>
@@ -611,31 +614,38 @@ Historical maps are a great source of detailed place information in the past. Fo
         </section>
         <section>
         <h3>Potential Research Topics</h3>
+<b> Integrating, modeling, visualizing, and mining spatiotemporal information from heterogeneous data sources</b><br>
+We are building automatic techniques to identify spatiotemporal patterns from heterogeneous data sources. Check the projects under Geospatial Data Integration for more information.
+<br>
+<b> Type of position:</b> directed research, potential PhD students
+<br>
+<b>Requirement:</b> excellent programming skills in Python, familiarity with machine learning and data mining, familiarity with Elasticsearch, Spark, spatial databases is a plus.
+<br><br>
 <b> Exploiting online data sources to build accurate gazetteers from map scans</b><br>
 We are building automatic techniques to convert text labels in scanned maps into machine-readable text. Our current system utilizes <a href="https://code.google.com/p/tesseract-ocr/" target="_blank">Tesseract</a> for the task of optical character recognition (OCR), and the results could contain missing or incorrectly recognized characters. We are investigating scalable, accurate methods to improve the character recognition results using existing geographic names. The idea is to automatically compare the recognition results with existing geographic names and find the best match efficiently. These geographic names can come from public online sources such as OpenStreetMaps and DBPedia. 
 <br>
-<b> Type of position:</b> directed research
+<b> Type of position:</b> directed research, potential PhD students
 <br>
 <b>Requirement:</b> excellent programming skills in C#, familiarity with fuzzy string comparison algorithms, familiarity with Elasticsearch and/or image processing is a plus.
 <br><br>
 <b> Building an accurate character recognition system</b><br>
 Optical character recognition (OCR) software such as the open source Tesseract uses a combination of techniques in machine learning, pattern recognition, and image processing. We are using Tesseract to convert text labels in hundreds of historical map scans into machine-readable text. We are investigating the best practice to train the underlying algorithms of Tesseract for efficiently recognizing specific font types and document layout.
 <br>
-<b> Type of position:</b> directed research
+<b> Type of position:</b> directed research, potential PhD students
 <br>
 <b>Requirement:</b> excellent programming skills in C#, familiarity with image processing, familiarity with pattern recognition and/or machine learning is a big plus.
 <br><br>
 <b> Symbol recognition from map scans</b><br>
 We are investigating methods to automatically extract locations of cartographic symbols from map images.
 <br> 
-<b> Type of position:</b> directed research
+<b> Type of position:</b> directed research, potential PhD students
 <br>
 <b>Requirement:</b> excellent programming skills in C#, familiarity with image processing, familiarity with pattern recognition and/or machine learning is a big plus.
 <br><br>
 <b>Image segmentation</b><br>
 Grouping similar colors in an image is very often the first step for object recognition from images. Existing image methods applied on document images do not always result in a clear representation of text in images. We are investigating efficient and effective methods that utilize both color and spatial distances between pixels to separate text from other object in a document image.
 <br>
-<b> Type of position:</b> directed research
+<b> Type of position:</b> directed research, potential PhD students
 <br>
 <b>Requirement:</b> excellent programming skills in C#, familiarity with image processing and machine learning, familiarity with computer vision is a big plus.
 <br>
