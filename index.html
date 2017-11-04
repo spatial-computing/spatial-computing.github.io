@@ -30,68 +30,36 @@
     </style>
 </head>
 
-<script type="text/javascript">
+
+
+<body>
+    <script type="text/javascript">
 <!--
-    var ids = ["who-we-are", "projects", "publications", "join-us","subprojects-gdi","subprojects-trm","subprojects-rvm","subprojects-srm","subprojects-lms","subprojects-shoah"];
+    var ids = ["who-we-are", "projects", "publications", "join-us","sponsors", "people","subprojects-gdi","subprojects-trm","subprojects-rvm","subprojects-srm","subprojects-lms","subprojects-shoah"];
 
     function toggle_visibility(id)
-    {
-        if(id.indexOf("subprojects-") > -1)
-        {
-            for	(i = 0; i < ids.length; i++)
-            {
-                var e = document.getElementById(ids[i]);
-                if(ids[i]==id || ids[i]=='projects')
-                    e.style.display = 'block';
-                else
-                {
-                    //if(ids[i].indexOf("subprojects-") > -1)
-                    {
-                        var e2 = document.getElementById(ids[i]);
-                        e2.style.display = "none";
-                    }
-                }
-            }
-        }
-        else if(id=="projects")
-        {
-        	 var e2 = document.getElementById("subprojects");
-			 if(e2.style.display == "none")
-				e2.style.display = "block";
-			 else
-				e2.style.display = "none";
-        
-        }
-        else
+    {  
         {
             //var project_clicked = 0;
-            for	(i = 0; i < ids.length; i++)
+            for (i = 0; i < ids.length; i++)
             {
                 var e = document.getElementById(ids[i]);
                 if(ids[i]==id)
                 {
-	                e.style.display = 'block';
+                    e.style.display = 'block';
                 }
                 else
                 {
                     e.style.display = 'none';
-                    if(ids[i]=="projects")
-                    {
-                        var e2 = document.getElementById("subprojects");
-                        e2.style.display = "none";
-                    }
-                   
                 }
-             }
+                
+            }
+            
+
         }
-       
     }
  //->
-
-
 </script>
-
-<body>
 <!-- Google Tag Manager -->
 <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-5LNVFK"
 height="0" width="0" style="display:block;visibility:hidden"></iframe></noscript>
@@ -109,49 +77,175 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         <h4>Spatial Sciences Institute, University of Southern California</h4>
         <a href="#who-we-are" onclick="toggle_visibility('who-we-are');"><h3>who we are</h3></a>
         <a href="#projects" onclick="toggle_visibility('projects');"><h3>projects</h3></a>
-
-        <div id="subprojects" style="display:block;padding-left:1em;">
-            <a href="#projects" onclick="toggle_visibility('subprojects-gdi');"><h5>data
-                integration and analytics</h5></a>
-            <a href="#projects" onclick="toggle_visibility('subprojects-trm');"><h5>text recognition in maps</h5>
-            </a>
-            <a href="#projects" onclick="toggle_visibility('subprojects-rvm');"><h5>road vectorization from
-                maps</h5></a>
-            <a href="#projects" onclick="toggle_visibility('subprojects-srm');"><h5>symbol recognition in
-                maps</h5></a>
-            <a href="#projects" onclick="toggle_visibility('subprojects-lms');"><h5>linking maps to other data sources</h5></a>
-            <a href="#projects" onclick="toggle_visibility('subprojects-shoah');"><h5>map journals and data visualization</h5></a>
-        </div>
-        
         <a href="#publications" onclick="toggle_visibility('publications');"><h3>publications</h3></a>
+        <a href="#people" onclick="toggle_visibility('people');"><h3>people</h3></a>
         <a href="#join-us" onclick="toggle_visibility('join-us');"><h3>join us</h3></a>
-
+        <a href="#sponsors" onclick="toggle_visibility('sponsors');"><h3>sponsors</h3></a>
         <p></p>
 
         <p class="view"><a href="https://github.com/spatial-computing">View Our GitHub Profile</a></p>
 
         <img src="img/SSI-RGB-hformal.png" width="100%">
         <img src="img/PrimShield-Word_RegShieldRGB_CardOnTrans.png" width="100%">
+        <br>
         <small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a>
         </small>
     </header>
-
-    <section id="who-we-are">
+    <section id="who-we-are" style="display:block;"">
+       
         <h1>WHO WE ARE</h1>
-        We are a research team at the <a href="http://www.usc.edu/" target="_blank">University of Southern California</a>, <a href="http://spatial.usc.edu/" target="_blank">Spatial Sciences Institute</a>. We develop computer algorithms and build intelligent applications to solve real world <a href="https://news.usc.edu/91625/spatial-technology-opens-a-window-into-history/">problems</a>.
-        <h1>&nbsp;</h1>
-	
-	
-	    
-        <section id="people" >
+        We are a research lab at the <a href="http://www.usc.edu/" target="_blank">University of Southern California</a>, <a href="http://spatial.usc.edu/" target="_blank">Spatial Sciences Institute</a>. We develop computer algorithms and build intelligent applications to solve real world <a href="https://news.usc.edu/91625/spatial-technology-opens-a-window-into-history/">problems</a>. <br>
+        <a href="https://cra.org/ccc/great-innovative-idea-querying-historical-maps-as-a-unified-structured-and-linked-spatiotemporal-source/" target="_blank"><img src="img/usc.png" width="100%"></a><br>
+        Since 2013, more than <b>50 students</b> and <b>6 postdoctoral researchers</b> have worked in the lab, including: one local high school student, a number of visiting international students, and some USC undergraduate and graduate students GeoDisgn, electrical engineering, spatial informatics, computer science, and data informatics. A third of the 50+ research students are female students in engineering.
+        <a href="https://spatial.usc.edu/index.php/hacking-food-security/" target="_blank"><img src="img/hack.png" width="100%"></a>
+        <img src="img/SC_sticker_v1.2-01.jpg" width="100%">
+
+	</section>
+	   
+    <section id="projects" style="display:none;">
+
+        <h1>PROJECTS</h1>
+        <a href="#projects" onclick="toggle_visibility('subprojects-gdi');">-Data Integration and Analytics</a> 
+        <br>#spark #scala #data_mining #machine_learning #semantic_web_technologies<br><br>
+        
+        <a href="#projects" onclick="toggle_visibility('subprojects-trm');">-Text Recognition in Maps
+        </a><br> #image_processing #computer_vision #optical_character_recognition #graphics_recognition #pattern_recognition #semantic_web_technologies<br><br>
+        
+        <a href="#projects" onclick="toggle_visibility('subprojects-rvm');">-Road Vectorization from Maps</a>
+        <br> #image_processing #computer_vision #graphics_recognition #pattern_recognition #semantic_web_technologies<br><br>
+        
+        <a href="#projects" onclick="toggle_visibility('subprojects-srm');">-Symbol Recognition in Maps</a>
+        <br> #image_processing #computer_vision #graphics_recognition #pattern_recognition #semantic_web_technologies<br><br>
+        
+        <a href="#projects" onclick="toggle_visibility('subprojects-lms');">-Linking Maps</a>
+        <br> #image_processing #computer_vision #graphics_recognition #pattern_recognition #semantic_web_technologies<br><br>
+        
+        <a href="#projects" onclick="toggle_visibility('subprojects-shoah');">-Map Journals and Data Visualization</a>
+        <br> #web_map #information_integration #GIScience #GIS
+        
+    </section>
+    <section id="subprojects-gdi" style="display:none;">
+            <li style="list-style-type:none;">
+            <h2>Data Integration and Analytics</h2>
+            </li>
+            <li style="list-style-type:none;">
+            <h3>Data Analytics with Knowledge Graph</h3>
+            A domain expert can process heterogeneous data to make meaningful interpretations or predictions from the data. For example, by looking at research papers and patent records, an expert can determine the maturity of an emerging technology and predict the geographic location(s) and time (e.g., in a certain year) where and when the technology will be a success. However, this is an expert- and manual-intensive task. In this project, we are building an end-to-end system that leverages data collected from public sources to predict the (geographic) center(s) of a technology and when the center(s) will emerge. In our pilot study, we built a system to predict the future (geographic) center(s) for fuel cell technologies. The system extracts and cleanses data from public sources including research papers and patent records. After data extraction and cleansing, the system uses an ontology-based data integration method to generate knowledge graphs in the RDF (Resource Description Framework) format and enables users to switch quickly between machine learning models for predictive analytic tasks. 
+            </li>
+            <li style="list-style-type:none;">
+                <iframe width="420" height="315" src="https://www.youtube.com/embed/TRSc4_MrI8I" frameborder="0" allowfullscreen></iframe>
+            </li>
+            <h3></h3>
+
+            <h3>* Modeling, Integrating, and Visualizing Geospatial Data</h3>
+            <li><a href="http://usc-isi-i2.github.io/karma/" target="_blank">USC Karma</a></li>
+            <li><a href="https://github.com/InformationIntegrationGroup/Web-Karma/wiki/Working-with-geospatial-data" target="_blank">Karma with geospatial data</a></li>
+            <img src="img/geoimage29.png" width="100%">
+            <h3></h3>
+            <li style="list-style-type:none;">
+            <h3>* Efficient cleaning and transformation of geospatial data attributes: ArcKarma (an Esri ArcGIS plugin)</h3>
+            <img src="img/arckarma.jpg" width="100%">
+            </li><a href="#projects" onclick="toggle_visibility('projects');">other projects</a>
+        </section>
+        <section id="subprojects-trm" style="display:none;">
+            <li style="list-style-type:none;">
+            <h2>Text Recognition in Maps (OCR for Maps)</h2>
+            </li>
+            <h3>* Overall Approach for Text Recognition in Maps</h3>
+            <img src="img/text.png" width="100%"><br>
+            <iframe width="640" height="480" src="//www.youtube.com/embed/VqdSieR4fxY" frameborder="0" allowfullscreen></iframe>
+            <h3></h3>
+            <h3>* Generating geonames from map images: ArcStrabo (an Esri ArcGIS plugin) (OCR for Maps) </h3>
+            <img src="img/arcstrabo.jpg" width="100%">
+            <iframe width="640" height="480" src="//www.youtube.com/embed/OH4QSGSAlYo" frameborder="0" allowfullscreen></iframe>
+            <h3></h3>
+            <h3>* Generating named road vector data from map images (sample results)<br></h3>
+            <img src="img/tr1.jpg" width="100%">
+            <img src="img/tr2.jpg" width="100%">
+            <a href="#projects" onclick="toggle_visibility('projects');">other projects</a>
+        </section>
+        <section id="subprojects-rvm" style="display:none;">
+            <li style="list-style-type:none;">
+            <h2>Road Vectorization from Maps</h2>
+            </li>
+            <h3>* Overall Approach for Road Vectorization from Maps</h3>
+            <img src="img/road.png" width="100%"><br>
+            
+            <h4>** Sample results:<br></h4>
+            <img src="img/road2.png" width="100%"><br>
+            <img src="img/road1.png" width="100%">
+            <a href="#projects" onclick="toggle_visibility('projects');">other projects</a>
+        </section>
+        <section id="subprojects-srm" style="display:none;">
+            <li style="list-style-type:none;">
+            <h2>Symbol Recognition in Maps [<a href="https://github.com/spatial-computing/strabo-symbol-recognition" target="_blank">Repository</a>]</h2>
+            </li>
+            <h3>* Overall Approach for Symbol Recognition in Maps<br></h3>
+                <h4>1. Take a scanned map...(here shows an USGS historical topographic map)<br></h4>
+            <img src="img/test.jpg" width="100%">
+                <h4>and a symbol example</h4>
+            <img src="img/symbol2.jpg" width="148"><br>
+                <h4>2. Automatically identify map symbols that look like the symbol example (the blue boxes)<br></h4>
+            <img src="img/symbol1.jpg" width="100%"> <br>
+            <iframe width="640" height="480" src="https://www.youtube.com/embed/gvTNKR7y8Y8" frameborder="0" allowfullscreen></iframe>
+            <a href="#projects" onclick="toggle_visibility('projects');">other projects</a>
+        </section>
+        <section id="subprojects-lms" style="display:none;">
+            <li style="list-style-type:none;">
+            <h2>Linking Maps to Other Spatiotemporal Datasets</h2>
+            </li>
+            <h3>* Linking Map Symbols to DBPedia:<br></h3>
+                <h4>1. Take a scanned map...<br></h4>
+            <img src="img/iraqmap.jpg" width="100%"><br>
+                    <h4>2. Automatically identify hotel symbols and link the symbol locations to DBpedia<br></h4>
+            <img src="img/iraqmap-linked.jpg" width="100%"><br>
+                        <h4>3. Linked locations in a GIS<br></h4>
+            <img src="img/iraqmap-linked-gis.png" width="100%">
+            <a href="#projects" onclick="toggle_visibility('projects');">other projects</a>
+        </section>
+        <section id="subprojects-shoah" style="display:none;">
+            <li style="list-style-type:none;">
+            <h2>Map Journals and Data Visualization</h2>
+            </li>
+            <h3>* Linking Historical Maps to USC Shoah Foundation Visual History Archive</h3>
+            <li>The Visual History Archive (VHA) in the USC Shoah Foundation contains a large digital life story collection of survivors before, during, and after the Holocaust and other genocides. Currently, location information (e.g., place names) mentioned in the VHA is indexed by keywords. For example, using “Poland” as the keyword for place search on the VHA Online returns 5,325 indexing terms in which the indexing terms (place names) with verified locations are displayed in a Google Maps web interface. Since place names and administration boundaries can change significantly over time, displaying search results on a current map would not provide the best visualization tool for navigating the VHA digital collection through space and time. In addition, a number places mentioned (indexed) in the testimony could not be located due to the lack of historical sources for verifying the location information of these places. This limits the opportunity for researchers, educators, and the general public to access valuable VHA materials and prevents the VHA collection from being indexed and searched by advanced spatial queries (e.g., finding the testimonies mentioned cities or towns in Poland between 1930 and 1945).
+            <br><br>
+            Historical maps are a great source of detailed place information in the past. For example, during the World War II (WWII), the US Army Map Service (AMS) created around 40,000 maps covering a significant amount of the earth. Other map sources provide detailed historical pre- and post-WWII maps, such as the Polish mapping company, Centrum Kartografii, which offers pre-WWII maps of Poland with a comprehensive list of place names including towns, manufacturing plants, monuments, etc. These historical maps can be found in either paper or scanned (digital) format in map archives such as the David Rumsey Map Collection  or libraries including the USC Libraries,  UCLA Map Libraries,  Western Michigan Libraries,  and the Library of Congress. The problem we are addressing here is how to systematically and effectively link places mentioned in the VHA collection to relevant historical maps and other historical materials. 
+            
+            <br>
+            <br>
+            
+           <iframe width="640" height="480" src="https://www.youtube.com/embed/AKbHJO6PjJE" frameborder="0" allowfullscreen></iframe><br><b>Created by Andrew Hsu</b>
+           <br><a href="http://www.arcgis.com/apps/MapJournal/?appid=6c3b4136b9304df09c9adcf86dd30dd5"  target="_blank"><img src="img/peter.jpg" width="100%"></a><br><b>Created by Robin Franke</b>
+           <br><a href="http://www.arcgis.com/apps/MapJournal/index.html?appid=31149b21f3524681adc0f16cca64c9c5"  target="_blank"><img src="img/rwandan.jpg" width="100%"></a><br><b>Created by Alex Chen</b>
+           <br><a href="img/ICC2017-poster.pdf"  target="_blank">Poster presented at the 28th International Cartographic Conference: ICC 2017 (Supported in part by the USNC travel funding for ICC 2017 and in part by the USC URAP)</a>
+           
+            <h3></h3>
+            <h3>* Visualizing Climate Change with Maps:</h3>
+            
+           <br><a href="https://uscssi.maps.arcgis.com/apps/MapJournal/index.html?appid=6b9f20bace434df2b241dd47595e138a"  target="_blank"><img src="img/cg-mj1.jpg" width="100%"></a><br><b>Climate Change, Created by Hariprabha Mallyah</b>
+           <br><a href="https://uscssi.maps.arcgis.com/apps/MapJournal/index.html?appid=a36c40f9c83743c59bf8a86ceb456b31"  target="_blank"><img src="img/cg-mj2.jpg" width="100%"></a><br><b>Ocean Acidification, Created by Nandan Nayak</b>
+           <br><a href="http://uscssi.maps.arcgis.com/apps/MapJournal/index.html?appid=0e19a57f783844f6aa486e93c10d0779"  target="_blank"><img src="img/cg-mj3.jpg" width="100%"></a><br><b>Climate Refugee, Created by Joanna Wang</b>
+           <a href="#projects" onclick="toggle_visibility('projects');">other projects</a>
+        </section>
+    <section id="publications" style="display:none;">
+
+        <h1>PUBLICATION</h1>
+        Journal Articles
+        <script src="https://bibbase.org/show?bib=http%3A%2F%2Fwww.yoyoi.info%2Fpapers%2Fyaoyi-journal.bib&jsonp=1"></script>
+        Peer-Reviewed Conference/Workshop Articles
+        <script src="https://bibbase.org/show?bib=www.yoyoi.info%2Fpapers%2Fyaoyi.bib&jsonp=1"></script>
+    </section>
+    <section id="people" style="display:none;">
+
+        <h1>PEOPLE</h1>
         <section>
-            <h1>current</h1>
             <li style="list-style-type:none;">
                 <div class="profile">
                     <img src="img/yaoyi.jpg" width="120">
                     <div><a href="http://www.yoyoi.info" target="_blank"><b>Yao-Yi Chiang</b></a>
                     <h5>Associate Professor (Research), USC Spatial Sciences Institute</h5></div>
-			<h5>Note: I will teach the USC data mining class (INF-553) in 2018 Spring.</h5>
+            <h5>Note: I will teach the USC data mining class (INF-553) in 2018 Spring.</h5>
                 </div>
             </li>
             <li style="list-style-type:none;">
@@ -168,31 +262,24 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                         </h5></div>
                 </div>
             </li>
-	    <li style="list-style-type:none;">
+            <li style="list-style-type:none;">
                 <div class="profile">
                     <img src="img/yuanbincheng.jpeg" width="150">
                     <div><b>Yuanbin Cheng</b></a><h5>Graduate Student, USC Computer Science
                         </h5></div>
                 </div>
             </li>
-	    <li style="list-style-type:none;">
+            <li style="list-style-type:none;">
                 <div class="profile">
                     <img src="img/mengyuehuan.jpeg" width="150">
                     <div><b>Mengyue Huan</b></a><h5>Graduate Student, USC Spatial Informatics
                         </h5></div>
                 </div>
             </li>
-		<li style="list-style-type:none;">
+            <li style="list-style-type:none;">
                 <div class="profile">
                     <img src="img/xinyu.jpeg" width="150">
                     <div><b>Xin Yu</b></a><h5>Graduate Student, USC Spatial Informatics
-                        </h5></div>
-                </div>
-            </li>
-		<li style="list-style-type:none;">
-                <div class="profile">
-                    <img src="img/chenggu.jpeg" width="150">
-                    <div><a href="https://www.linkedin.com/in/cheng-gu-b82325133/" target="_blank"><b>Cheng Gu</b></a><h5>Graduate Student, USC Data Informatics
                         </h5></div>
                 </div>
             </li>
@@ -239,7 +326,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         <section>
             <h1>alumni</h1>
             <h5>2017</h5>
-	    <li style="list-style-type:none;">
+            <li style="list-style-type:none;">
                 <div class="profile">
                     <img src="img/xiaoyue.jpg" width="150">
                     <div><a href="https://www.linkedin.com/in/xiaoyue-yang-925aabaa/" target="_blank"><b>Xiaoyue (Vivien) Yang</b></a><h5>Visiting Research Programmer
@@ -260,10 +347,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                         Science</h5></div>
                 </div>
             </li>
-            
-            
-            
-            
             <li style="list-style-type:none;">
                 <div class="profile">
                     <img src="img/BhaskarBandyopadhyay.jpg" width="120">
@@ -278,10 +361,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                         Science</h5></div>
                 </div>
             </li>
-            
-           
-            
-            
            <li style="list-style-type:none;">
                 <div class="profile">
                     <img src="img/JoannaHaoshiWang.jpg" width="120">
@@ -314,10 +393,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                     <div><a href="https://www.linkedin.com/in/kucherlapati-sumedha-a2040448" target="_blank"><b>Sumedha Kucherlapati</b></a>
                     <h5>Graduate Student, USC Data Informatics</h5></div>
                 </div>
-            </li>
-            
-           
-            
+            </li>   
             <li style="list-style-type:none;">
                 <div class="profile">
                     <img src="img/HariprabhaMallyah.jpg" width="120">
@@ -531,8 +607,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 </div>
             </li>
 
-			<h5>2014</h5>
-			<li style="list-style-type:none;">
+            <h5>2014</h5>
+            <li style="list-style-type:none;">
                 <div class="profile">
                     <img src="img/AkshayAnand.jpg" width="120">
 
@@ -571,7 +647,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 </div>
             </li>
             <h5>2013</h5>
-			<li style="list-style-type:none;">
+            <li style="list-style-type:none;">
                 <div class="profile">
                     <img src="img/ketan-akade.jpg" width="100">
 
@@ -619,168 +695,70 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 </div>
             </li>
         </section>
-            <h1 id="projects2">&nbsp;</h1>
-           <h1 id="subprojects-gdi2">&nbsp;</h1>
     </section>
-    </section>
-    
-    <section id="projects" style="display:block;">
-        <h1>PROJECTS</h1>
-        <section id="subprojects-gdi">
-        	<li style="list-style-type:none;">
-            <h2>Data Integration and Analytics</h2>
-            </li>
-            <li style="list-style-type:none;">
-            <h3>* Data Analytics with Knowledge Graph</h3>
-        	A domain expert can process heterogeneous data to make meaningful interpretations or predictions from the data. For example, by looking at research papers and patent records, an expert can determine the maturity of an emerging technology and predict the geographic location(s) and time (e.g., in a certain year) where and when the technology will be a success. However, this is an expert- and manual-intensive task. In this project, we are building an end-to-end system that leverages data collected from public sources to predict the (geographic) center(s) of a technology and when the center(s) will emerge. In our pilot study, we built a system to predict the future (geographic) center(s) for fuel cell technologies. The system extracts and cleanses data from public sources including research papers and patent records. After data extraction and cleansing, the system uses an ontology-based data integration method to generate knowledge graphs in the RDF (Resource Description Framework) format and enables users to switch quickly between machine learning models for predictive analytic tasks. 
-            </li>
-            <li style="list-style-type:none;">
-                <iframe width="420" height="315" src="https://www.youtube.com/embed/TRSc4_MrI8I" frameborder="0" allowfullscreen></iframe>
-        	</li>
-            <h3></h3>
-
-            <h3>* Modeling, Integrating, and Visualizing Geospatial Data</h3>
-            <li><a href="http://usc-isi-i2.github.io/karma/" target="_blank">USC Karma</a></li>
-            <li><a href="https://github.com/InformationIntegrationGroup/Web-Karma/wiki/Working-with-geospatial-data" target="_blank">Karma with geospatial data</a></li>
-            <img src="img/geoimage29.png" width="100%">
-            <h3></h3>
-            <li style="list-style-type:none;">
-            <h3>* Efficient cleaning and transformation of geospatial data attributes: ArcKarma (an Esri ArcGIS plugin)</h3>
-            <img src="img/arckarma.jpg" width="100%">
-            </li>
-            <h1 id="subprojects-trm2">&nbsp;</h1>
-        </section>
-
-        <section id="subprojects-trm" style="display:block;">
-            <li style="list-style-type:none;">
-            <h2>Text Recognition in Maps (OCR for Maps)</h2>
-            </li>
-            <h3>* Overall Approach for Text Recognition in Maps</h3>
-            <img src="img/text.png" width="100%"><br>
-            <iframe width="640" height="480" src="//www.youtube.com/embed/VqdSieR4fxY" frameborder="0" allowfullscreen></iframe>
-            <h3></h3>
-            <h3>* Generating geonames from map images: ArcStrabo (an Esri ArcGIS plugin) (OCR for Maps) </h3>
-            <img src="img/arcstrabo.jpg" width="100%">
-            <iframe width="640" height="480" src="//www.youtube.com/embed/OH4QSGSAlYo" frameborder="0" allowfullscreen></iframe>
-            <h3></h3>
-            <h3>* Generating named road vector data from map images (sample results)<br></h3>
-            <img src="img/tr1.jpg" width="100%">
-            <img src="img/tr2.jpg" width="100%">
-            
-            <h1 id="subprojects-rvm2">&nbsp;</h1>
-        </section>
-
-        <section id="subprojects-rvm" style="display:block;">
-            <li style="list-style-type:none;">
-            <h2>Road Vectorization from Maps</h2>
-            </li>
-            <h3>* Overall Approach for Road Vectorization from Maps</h3>
-            <img src="img/road.png" width="100%"><br>
-            
-            <h4>** Sample results:<br></h4>
-            <img src="img/road2.png" width="100%"><br>
-            <img src="img/road1.png" width="100%">
-
-            <h1 id="subprojects-srm2">&nbsp;</h1>
-        </section>
-        <section id="subprojects-srm" style="display:block;">
-            <li style="list-style-type:none;">
-            <h2>Symbol Recognition in Maps [<a href="https://github.com/spatial-computing/strabo-symbol-recognition" target="_blank">Repository</a>]</h2>
-            </li>
-            <h3>* Overall Approach for Symbol Recognition in Maps<br></h3>
-                <h4>1. Take a scanned map...(here shows an USGS historical topographic map)<br></h4>
-            <img src="img/test.jpg" width="100%">
-                <h4>and a symbol example</h4>
-            <img src="img/symbol2.jpg" width="148"><br>
-                <h4>2. Automatically identify map symbols that look like the symbol example (the blue boxes)<br></h4>
-            <img src="img/symbol1.jpg" width="100%"> <br>
-            <iframe width="640" height="480" src="https://www.youtube.com/embed/gvTNKR7y8Y8" frameborder="0" allowfullscreen></iframe>
-            
-            <h1 id="subprojects-lms2">&nbsp;</h1>
-        </section>
-        <section id="subprojects-lms" style="display:block;">
-            <li style="list-style-type:none;">
-            <h2>Linking Maps to Other Spatiotemporal Datasets</h2>
-            </li>
-            <h3>* Linking Map Symbols to DBPedia:<br></h3>
-                <h4>1. Take a scanned map...<br></h4>
-            <img src="img/iraqmap.jpg" width="100%"><br>
-                    <h4>2. Automatically identify hotel symbols and link the symbol locations to DBpedia<br></h4>
-            <img src="img/iraqmap-linked.jpg" width="100%"><br>
-                        <h4>3. Linked locations in a GIS<br></h4>
-            <img src="img/iraqmap-linked-gis.png" width="100%">
-            
-            <h1 id="subprojects-shoah2">&nbsp;</h1>
-        </section>
-        <section id="subprojects-shoah" style="display:block;">
-            <li style="list-style-type:none;">
-            <h2>Map Journals and Data Visualization</h2>
-            </li>
-        	<h3>* Linking Historical Maps to USC Shoah Foundation Visual History Archive</h3>
-			<li>The Visual History Archive (VHA) in the USC Shoah Foundation contains a large digital life story collection of survivors before, during, and after the Holocaust and other genocides. Currently, location information (e.g., place names) mentioned in the VHA is indexed by keywords. For example, using “Poland” as the keyword for place search on the VHA Online returns 5,325 indexing terms in which the indexing terms (place names) with verified locations are displayed in a Google Maps web interface. Since place names and administration boundaries can change significantly over time, displaying search results on a current map would not provide the best visualization tool for navigating the VHA digital collection through space and time. In addition, a number places mentioned (indexed) in the testimony could not be located due to the lack of historical sources for verifying the location information of these places. This limits the opportunity for researchers, educators, and the general public to access valuable VHA materials and prevents the VHA collection from being indexed and searched by advanced spatial queries (e.g., finding the testimonies mentioned cities or towns in Poland between 1930 and 1945).
-			<br><br>
-			Historical maps are a great source of detailed place information in the past. For example, during the World War II (WWII), the US Army Map Service (AMS) created around 40,000 maps covering a significant amount of the earth. Other map sources provide detailed historical pre- and post-WWII maps, such as the Polish mapping company, Centrum Kartografii, which offers pre-WWII maps of Poland with a comprehensive list of place names including towns, manufacturing plants, monuments, etc. These historical maps can be found in either paper or scanned (digital) format in map archives such as the David Rumsey Map Collection  or libraries including the USC Libraries,  UCLA Map Libraries,  Western Michigan Libraries,  and the Library of Congress. The problem we are addressing here is how to systematically and effectively link places mentioned in the VHA collection to relevant historical maps and other historical materials. 
-			
-			<br>
-			<br>
-			
-           <iframe width="640" height="480" src="https://www.youtube.com/embed/AKbHJO6PjJE" frameborder="0" allowfullscreen></iframe><br><b>Created by Andrew Hsu</b>
-           <br><a href="http://www.arcgis.com/apps/MapJournal/?appid=6c3b4136b9304df09c9adcf86dd30dd5"  target="_blank"><img src="img/peter.jpg" width="100%"></a><br><b>Created by Robin Franke</b>
-           <br><a href="http://www.arcgis.com/apps/MapJournal/index.html?appid=31149b21f3524681adc0f16cca64c9c5"  target="_blank"><img src="img/rwandan.jpg" width="100%"></a><br><b>Created by Alex Chen</b>
-           <br><a href="img/ICC2017-poster.pdf"  target="_blank">Poster presented at the 28th International Cartographic Conference: ICC 2017 (Supported in part by the USNC travel funding for ICC 2017 and in part by the USC URAP)</a>
-           
-            <h3></h3>
-            <h3>* Visualizing Climate Change with Maps:</h3>
-            
-           <br><a href="https://uscssi.maps.arcgis.com/apps/MapJournal/index.html?appid=6b9f20bace434df2b241dd47595e138a"  target="_blank"><img src="img/cg-mj1.jpg" width="100%"></a><br><b>Climate Change, Created by Hariprabha Mallyah</b>
-           <br><a href="https://uscssi.maps.arcgis.com/apps/MapJournal/index.html?appid=a36c40f9c83743c59bf8a86ceb456b31"  target="_blank"><img src="img/cg-mj2.jpg" width="100%"></a><br><b>Ocean Acidification, Created by Nandan Nayak</b>
-           <br><a href="http://uscssi.maps.arcgis.com/apps/MapJournal/index.html?appid=0e19a57f783844f6aa486e93c10d0779"  target="_blank"><img src="img/cg-mj3.jpg" width="100%"></a><br><b>Climate Refugee, Created by Joanna Wang</b>
-           
-        </section>
-        <h1 id="publications2">&nbsp;</h1>
-    </section>
-    
-   
-
-    <section id="publications" style="display:block;">
-        <h1>PUBLICATION</h1>
-        Journal Articles
-<script src="https://bibbase.org/show?bib=http%3A%2F%2Fwww.yoyoi.info%2Fpapers%2Fyaoyi-journal.bib&jsonp=1"></script>
-
-
-        Peer-Reviewed Conference/Workshop Articles
-<script src="https://bibbase.org/show?bib=www.yoyoi.info%2Fpapers%2Fyaoyi.bib&jsonp=1"></script>
-
-
-        <h1 id="join-us2">&nbsp;</h1>
-    </section>
-
-    <section id="join-us" style="display:block;">
+    <section id="join-us" style="display:none;">
+      
         <h1>JOIN US</h1>
         <section>
             <h3>Hacking the SPACE!</h3>
-            We are always looking for students and summer interns to work on interesting problems in spatial science, data science,
-            computer science. Please feel free to <a href="mailto:yaoyic@usc.edu?Subject=Hacking%20the%20SPACE"
-                                                     target="_top">send us an email</a> if you are interested to join
-            the team. <br><img src="img/team2015.JPG" width="500"><br><img src="img/icc2017.jpg" width="500">
+            We are always looking for talented and motivated students and summer interns to work on exciting problems in spatial science, data science, and computer science. <a href="mailto:yaoyic@usc.edu?Subject=Hacking%20the%20SPACE"
+                                                     target="_top">Send us an email</a> if you are interested to join
+            the team. We are receiving many applications every semester, and we have limited positions. In your email, please include 1) your resume, 2) a short description of your research interests, and 3) the research projects that you'd like to participate. You are highly encouraged to talk to any of the group members before you send the email. <br><br><img src="img/team2015.JPG" width="500"><br><img src="img/icc2017.jpg" width="500"> 
         </section>
 
         <section>
             <h3>USC Graduate Students</h3>
-            Credit or non-credit (Computer Science, Data Informatics, or GIST studetns), we simply ask you to put down at least 10 hours a week so that you will have enough
-            time to finish a cool project.
+            Directed research students (Computer Science, Data Informatics, or GIST students): we ask you to put down at least 15 hours a week so that you will have enough time to finish a cool project.
         </section>
         <section>
             <h3>USC Undergraduate Students</h3>
-            We love to work with undergraduate students. Join us and gain experience in research and build some awesome
-            applications!
+            We love to work with undergraduate students. Join us and gain experience in research and build some awesome applications!
         </section>
         <section>
             <h3>Visitors and Students from Other Schools (including international scholars and students)</h3>
             We welcome visitors and students from other schools. We had great experience with international summer
             interns in the past. Come work with us in Los Angeles and enjoy the nice weather!
         </section>
-        
+         <section>
+            <h3>Prospective PhD Students</h3>
+            We take Ph.D. students from both the USC Ph.D. programs in <a href="https://www.cs.usc.edu/phd-students/" target="_blank">Computer Science</a> and in <a href="https://spatial.usc.edu/index.php/doctoral-programs-1/" target="_blank">Population, Health, and Place</a>. If you want to work with our faculty members for your Ph.D. study, you are welcome to <a href="mailto:yaoyic@usc.edu?Subject=Hacking%20the%20SPACE%20PhD"
+                                                     target="_top">send us an email</a> describing your research interest before you apply.
+        </section>      
+    </section>
+    <section id="sponsors" style="display:none;">
+    
+        <h1>SPONSORS</h1>
+        <li style="list-style-type:none;">
+        <img src="img/nsf.jpeg" width="180"><br><br>
+        </li>
+        <li style="list-style-type:none;">
+        <img src="img/nih.png" width="180"><br><br>
+        </li>
+        <li style="list-style-type:none;">
+        <img src="img/neh.jpeg" width="180"><br><br>
+        </li>
+        <li style="list-style-type:none;">
+        <img src="img/darpa.jpeg" width="180"><br><br>
+        </li>
+        <li style="list-style-type:none;">
+        <img src="img/nga.jpg" width="180"><br><br>
+        </li>
+        <li style="list-style-type:none;">
+        <img src="img/nvidia.png" width="180"><br><br>
+        </li>
+        <li style="list-style-type:none;">
+        <img src="img/microsoft.png" width="180"><br><br>
+        </li>
+        <li style="list-style-type:none;">
+        <img src="img/cls.png" width="120"><br><br>
+        </li>
+        <li style="list-style-type:none;">
+        <img src="img/terrago.png" width="180"><br><br>
+        </li>
+        <li style="list-style-type:none;">
+        <img src="img/huawei.jpeg" width="180"><br><br>
+        </li>
+        <li style="list-style-type:none;">
     </section>
 </div>
 <script src="javascripts/scale.fix.js"></script>
