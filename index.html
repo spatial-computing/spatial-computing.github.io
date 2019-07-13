@@ -15,24 +15,24 @@
 <style>
 @import url("stylesheets/styles.css");
 @font-face {
-	font-family: 'National';
-	src: url('//www.usc.edu/assets/fonts/NationalWeb-Light.eot');
-	src: local(':)'), url('//www.usc.edu/assets/fonts/NationalWeb-Light.woff') format('woff'), url('//www.usc.edu/assets/fonts/NationalWeb-Light.ttf') format('truetype'), url('//www.usc.edu/assets/fonts/NationalWeb-Light.svg') format('svg');
-	font-weight: 200;
-	font-style: normal;
+  font-family: 'National';
+  src: url('//www.usc.edu/assets/fonts/NationalWeb-Light.eot');
+  src: local(':)'), url('//www.usc.edu/assets/fonts/NationalWeb-Light.woff') format('woff'), url('//www.usc.edu/assets/fonts/NationalWeb-Light.ttf') format('truetype'), url('//www.usc.edu/assets/fonts/NationalWeb-Light.svg') format('svg');
+  font-weight: 200;
+  font-style: normal;
 }
 .profile > li {
-	float: left;
+  float: left;
 }
 .profile .caption {
-	overflow : hidden;
-	text-overflow: ellipsis;
-	text-align: center;
+  overflow : hidden;
+  text-overflow: ellipsis;
+  text-align: center;
 }
 .profile .h3 {
-	overflow : hidden;
-	text-overflow: ellipsis;
-	text-align: center;
+  overflow : hidden;
+  text-overflow: ellipsis;
+  text-align: center;
 }
 .profile img {
 }
@@ -42,17 +42,17 @@
 <body onload="load()">
 <script type="text/javascript">
 <!--
-	
+  
 
     var ids = ["who-we-are", "projects", "publications", "join-us","sponsors", "people","subprojects-prismsda","subprojects-karmacad","subprojects-sansa","subprojects-arya","subprojects-arckarma","subprojects-strabotrm","subprojects-strabosrm","subprojects-straborvm","subprojects-storymap","subprojects-shoah","subprojects-ict"];
 
-	function load()
-	{
-		var url =(window.location.href);
-		var token = url.split("#");
-		if(token.length == 2)
-			toggle_visibility(token[1]);
-	}
+  function load()
+  {
+    var url =(window.location.href);
+    var token = url.split("#");
+    if(token.length == 2)
+      toggle_visibility(token[1]);
+  }
     function toggle_visibility(id)
     {  
         {
@@ -109,8 +109,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a> </small> </header>
   <section id="who-we-are" style="display:block;">
     <h1>WHO WE ARE</h1>
-	  
-    <p style="text-align:left;">We are a research lab at the <a href="http://spatial.usc.edu/" target="_blank">Spatial Sciences Institute</a>, <a href="http://www.usc.edu/" target="_blank">University of Southern California</a>. 
+    
+    <p style="text-align:left;">We are an interdiciplinary research lab at the <a href="http://spatial.usc.edu/" target="_blank">Spatial Sciences Institute</a>, <a href="http://www.usc.edu/" target="_blank">University of Southern California</a>. 
 
     Our research focus lies at the intersection of <font color="blue">computer science</font> and <font color="green">spatial sciences</font> where we build intelligent algorithms and applications for: <h3><i>discovering, collecting, fusing, and analyzing data from heterogeneous sources to solve real-world problems.</i></h3> For example, we are pioneering <a href="https://news.usc.edu/91625/spatial-technology-opens-a-window-into-history/" target="_blank">novel map processing technologies to unlock historical geographic information from maps</a>. Our open-source software, <a href="#projects" onclick="toggle_visibility('subprojects-strabotrm');">Strabo</a>, “reads” scanned maps for automatically identifying historical locations of places. In another project, in collaboration with the USC Information Sciences Institute and the USC Keck Medical School, we are developing <a href="#projects" onclick="toggle_visibility('subprojects-prismsda');">data mining algorithms and a system</a> for automatic predictions of fine-scale air pollutant concentrations.</p> 
     <img alt="" src="img/SC_sticker_v1.2-01.jpg" width="80%"><br>
@@ -149,7 +149,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         <i class="fa fa-object-ungroup" aria-hidden="true"></i> <strong>SANSA:</strong> <a href="#projects" onclick="toggle_visibility('subprojects-sansa');">Building Knowledge Graph to Support Event Prediction</a><br>
         <i class="fa fa-plane" aria-hidden="true"></i> <strong>KarmaCAD:</strong> <a href="#projects" onclick="toggle_visibility('subprojects-karmacad');">Automatically Inferring User Intent of CAD Models</a><br>
         <i class="fa fa-table" aria-hidden="true"></i> <strong>Karma:</strong> <a href="#projects" onclick="toggle_visibility('subprojects-arckarma');">A Data Integration Project</a><br>
-         <i class="fa fa-table" aria-hidden="true"></i> <a href="https://imsc.usc.edu/application-domains/transportation/" ><strong>Transportation: </strong> </a><br>
+       <i class="fa fa-car" aria-hidden="true"></i> <a href="https://imsc.usc.edu/application-domains/transportation/" ><strong>Transportation </strong> </a><br>
         
       </p>
     </blockquote>
@@ -197,14 +197,23 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   <section id="subprojects-prismsda" style="display:none;">
     <h2>Mining Large Online Datasets for Air Quality Prediction</h2>
     <p style="text-align:left;"><strong>JonSnow:</strong> <em>Mining public datasets for modeling intra-city PM2.5 concentrations at a fine spatial resolution.</em></p>
+        <section><b>NEW:</b> Try our JonSnow <a href="http://jonsnow.usc.edu/api/help" target="_blank">API</a> for real-time air quality prediction and forecasting in Los Angeles</section>
+
     <p style="text-align:left;">Air quality models are important for studying the impact of air pollutant on health conditions. Existing work typically <strong>relies on area-specific, expert-selected attributes of pollution emissions (e,g., transportation) and dispersion (e.g., meteorology)</strong> for building the model<strong> for each combination of study areas, pollutant types, and spatiotemporal scales</strong>. </p>
-    <p style="text-align:left;">In this project, we are building a data mining approach, JonSnow, which utilizes publicly available OpenStreetMap (OSM) data to automatically generate  air quality model for the concentrations for any type of pollutants at various temporal scales.  Our approach utilizes the PRISMS_DSCIC infrastructure (image below) developed at USC Information Sciences Institute as the data collection, manipulation, and analysis platform.</p>
+    <p style="text-align:left;">In this project, we are building a data mining approach, JonSnow, which utilizes publicly available OpenStreetMap (OSM) data to automatically generate  air quality model for the concentrations for any type of pollutants at various temporal scales.  Our approach utilizes the PRISMS-DSCIC infrastructure (image below) developed at USC Information Sciences Institute as the data collection, manipulation, and analysis platform.</p>
     <p style="text-align:left;"><img alt="" src="img/prisms.png" width="100%"> </p>
     <p style="text-align:left;">The PRISMS-DSCIC (Pediatric Research using Integrated Sensor Monitoring Systems - Data and Software Coordination and Integration Center) is an NIH-NIBIB (National Institutes of Health - National Institute of Biomedical Imaging and Bioengineering) funded initiative to address pediatric asthma as a chronic disease of childhood. PRISMS-DSCIC is responsible for collecting, storing, integrating, and analyzing real-time environmental, physiological and behavioral data obtained from heterogeneous sensors and traditional data sources to help researchers to predict and prevent asthma attacks efficiently. </p>
     <p style="text-align:left;"><strong>JonSnow automatically generates (domain-) expert-free model for accurate PM2.5 concentration predictions, which can be used to improve air quality models that traditionally rely on expert-selected input.</strong></p>
     <p style="text-align:left;"> The image below shows the PM2.5 AQI predictions from JonSnow (left) and the traditional spatial interpolation method, IDW (right), for Dec 2016 (top) and Jan 2017 (bottom). As expected, IDW could not generate fine-scale predictions while JonSnow successfully identified intra-city areas where the air quality is typically poor (e.g., the south part of the city near the port of San Pedro and downtown Los Angeles).</p>
     <img alt="" src="img/prisms-da1.jpg" width="100%"> <img alt="" src="img/prisms-da2.jpg" width="100%">
     <section>Sponsors: NIH</section>
+    <li style="list-style-type:none;">
+        <div class="profile"> <img alt="" src="img/yijunlin.jpg" width="150">
+          <div><a href="https://www.linkedin.com/in/yijun-lin/" target="_blank"><b>Yijun Lin</b></a>
+            <h5>Ph.D. Student, USC Computer Science</h5>
+          </div>
+        </div>
+      </li>
     <h2><a href="#projects" onclick="toggle_visibility('projects');">see other projects</a></h2>
   </section>
   <section id="subprojects-karmacad" style="display:none;">
@@ -214,25 +223,33 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <p style="text-align:left;">In this project, we study the CAD interoperability problem focusing on <strong>developing a semi-automatic approach that allows CAD users to record their design intention efficiently</strong>. We first created our JSON format to represent the fixed and dimension relations of CAD designs. Then we built a SolidWorks plugin called RelationFixer, which can 
     <ul>
     <li>convert a CAD model to the JSON format,</li> 
-	<li>use multiple CAD models to automatically figure out the required fixed and dimension relations for representing a part of the user intent, and </li>
-	<li>convert the JSON representation of the CAD model and the identified constrains to a SolidWorks CAD model.</li>
-	</ul></p>
+  <li>use multiple CAD models to automatically figure out the required fixed and dimension relations for representing a part of the user intent, and </li>
+  <li>convert the JSON representation of the CAD model and the identified constrains to a SolidWorks CAD model.</li>
+  </ul></p>
     <p style="text-align:left;">Given a few examples of the desired and undesired variations of a CAD design, RelationFixer learns the design rationales automatically and selects a set of fixed and dimension relations that best represent the design rationales. We recreated the ambiguous CAD designs described in Raghothama and Shapiro&rsquo;s previous work (Raghothama and Shapiro, 2002) and tested RelationFixer with these CAD designs. In the experiment, RelationFixer successfully learned the design rationales from a few examples of design variations and generated constraints between sketches in the CAD models to prevent possible ambiguities.</p>
     <p style="text-align:left;"><img alt="" src="img/karmacad.png" width="100%"> </p>
     <iframe width="560" height="315" src="https://www.youtube.com/embed/FYAsW9gyTa8" frameborder="0" gesture="media" allowfullscreen></iframe>
     <iframe width="560" height="315" src="https://www.youtube.com/embed/rVFOFYkO7p4" frameborder="0" gesture="media" allowfullscreen></iframe>
     <iframe width="560" height="315" src="https://www.youtube.com/embed/7oPI8M8WLgY" frameborder="0" gesture="media" allowfullscreen></iframe>
     <section>Sponsors: DARPA</section>
+   
     <h2><a href="#projects" onclick="toggle_visibility('projects');">see other projects</a></h2>
   </section>
   <section id="subprojects-sansa" style="display:none;">
     <h2>Predictive Data Analytics using Knowledge Graph</h2>
     <p style="text-align:left;"><strong>SANSA:</strong><em> Building Knowledge Graph to Support Event Prediction</em></p>
     <p style="text-align:left;">A domain expert can process heterogeneous data to make meaningful interpretations or predictions from the data. For example, by looking at research papers and patent records, an expert can determine the maturity of an emerging technology and predict the geographic location(s) and time (e.g., in a certain year) where and when the technology will be a success. However, this is an expert- and manual-intensive task. </p>
-    <p style="text-align:left;">In this project, we are building an end-to-end system, Sansa, that <strong>leverages data collected from public sources to predict the (geographic) center(s) of a technology and when the center(s) will emerge.</strong> In our pilot study, we used Sansa to predict the future (geographic) center(s) for fuel cell technologies. Sansa extracts and cleanses data from public sources including research papers and patent records. After data extraction and cleansing, Sansa uses an ontology-based data integration method to generate knowledge graphs in the RDF (Resource Description Framework) format and enables users to switch quickly between machine learning models for predictive analytic tasks. Here's a demonstration of Sansa:</p>
+    <p style="text-align:left;">In this project, we are building an end-to-end system, Sansa, that <strong>leverages data collected from public sources to predict the (geographic) center(s) of a type of technology and when the center(s) will emerge.</strong> In our pilot study, we used Sansa to predict the future (geographic) center(s) for fuel cell technologies. Sansa extracts and cleanses data from public sources including research papers and patent records. After data extraction and cleansing, Sansa uses an ontology-based data integration method to generate knowledge graphs in the RDF (Resource Description Framework) format and enables users to switch quickly between machine learning models for predictive analytic tasks. Here's a demonstration of Sansa:</p>
     <iframe width="420" height="315" src="https://www.youtube.com/embed/TRSc4_MrI8I" frameborder="0" allowfullscreen></iframe>
     <p style="text-align:left;">Our work on SANSA won <a href="http://usgif.org/news/924-usgif-and-nvidia-announce-winners-of-gpu-essay-challenge">the USGIF and NVIDIA GPU Essay Challenge:</a>  “If you were given dedicated access to an NVIDIA GPU-powered supercomputer, what problems could you solve?”</p>
     <section>Sponsors: BAE Systems, NVIDIA</section>
+     <li style="list-style-type:none;">
+        <div class="profile"> <img alt="" src="img/Weiwei_Duan.jpg" width="160">
+          <div><b>Weiwei Duan</b>
+            <h5>Ph.D. Student, USC Computer Science</h5>
+          </div>
+        </div>
+      </li>
     <h2><a href="#projects" onclick="toggle_visibility('projects');">see other projects</a></h2>
   </section>
   <section id="subprojects-shoah" style="display:none;">
@@ -283,6 +300,21 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <p style="text-align:left;">
       <section>Sponsors: NSF, Microsoft, NVIDIA</section>
     </p>
+    <li style="list-style-type:none;">
+        <div class="profile"> <img alt="" src="img/Weiwei_Duan.jpg" width="160">
+          <div><b>Weiwei Duan</b>
+            <h5>Ph.D. Student, USC Computer Science</h5>
+          </div>
+        </div>
+      </li>
+       <li style="list-style-type:none;">
+       <div class="profile"> <img alt="" src="img/zekun.jpg" width="150">
+         <div><a href="https://www.linkedin.com/in/lizekun/" target="_blank"><b>Zekun Li</b></a>
+           <h5>Ph.D. Student, USC Computer Science</h5>
+         </div>
+       </div>
+     </li>
+
     <h2><a href="#projects" onclick="toggle_visibility('projects');">see other projects</a></h2>
   </section>
   <section id="subprojects-arckarma" style="display:none;">
@@ -484,7 +516,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   <section id="people" style="display:none;">
     <h1>PEOPLE & BOB</h1>
     <section>
-	    <li style="list-style-type:none;">
+      <li style="list-style-type:none;">
         <div class="profile"> <img alt="" src="img/bob.png" width="120">
           <div><b>Bob</b>
             <h5>The Dog</h5>
@@ -515,15 +547,15 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           </div>
         </div>
       </li>
-	      <li style="list-style-type:none;">
+        <li style="list-style-type:none;">
         <div class="profile"> <img alt="" src="img/dan.jpg" width="150">
           <div><a href="https://www.linkedin.com/in/dan-feldman-a2a9155a/" target="_blank"><b>Dan Feldman</b></a>
             <h5>Ph.D. Student, USC Computer Science</h5>
           </div>
         </div>
       </li>   
-	    
-	<li style="list-style-type:none;">
+      
+  <li style="list-style-type:none;">
        <div class="profile"> <img alt="" src="img/haejin_song.png" width="150">
          <div><a href="https://www.linkedin.com/in/hayleysong/" target="_blank"><b>Hayley Song</b></a>
            <h5>Ph.D. Student, USC Computer Science</h5>
@@ -539,7 +571,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
        </div>
      </li>
 
-	
+  
     
    <li style="list-style-type:none;">
         <div class="profile"> <img alt="" src="img/johanna.jpg" width="160">
@@ -548,7 +580,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           </div>
         </div>
       </li>    
-	
+  
 <li style="list-style-type:none;">
         <div class="profile"> <img alt="" src="img/lois.jpg" width="160">
           <div><b>Lois Park</b>
@@ -556,7 +588,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           </div>
         </div>
       </li>    
-	
+  
      
     <li style="list-style-type:none;">
         <div class="profile"> <img alt="" src="img/xiaozheyin.jpg" width="150">
@@ -591,8 +623,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       <h5>2019</h5>
 
       
-	    
-	    <li style="list-style-type:none;">
+      
+      <li style="list-style-type:none;">
         <div class="profile"> <img alt="" src="img/LiboLiu.jpg" width="150">
           <div><a href="https://github.com/limbov8" target="_blank"><b>Libo Liu</b></a>
             <h5>Graduate Student, USC Computer Science</h5>
@@ -601,14 +633,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       </li>
 
 
-	<li style="list-style-type:none;">
-	  <div class="profile"> <img alt="" src="img/Pallavi_Taneja.jpg" width="150">
-	    <div><a href="https://www.linkedin.com/in/pallavitaneja/" target="_blank"><b>Pallavi Taneja</b></a>
-	      <h5>Graduate Student, USC Computer Science </h5>
-	    </div>
-	  </div>
-	</li>
-		<li style="list-style-type:none;">
+  <li style="list-style-type:none;">
+    <div class="profile"> <img alt="" src="img/Pallavi_Taneja.jpg" width="150">
+      <div><a href="https://www.linkedin.com/in/pallavitaneja/" target="_blank"><b>Pallavi Taneja</b></a>
+        <h5>Graduate Student, USC Computer Science </h5>
+      </div>
+    </div>
+  </li>
+    <li style="list-style-type:none;">
         <div class="profile"> <img alt="" src="img/HaowenLin.jpg" width="150">
           <div><a href="https://www.linkedin.com/in/haowen-lin/" target="_blank"><b>Haowen Lin</b></a>
             <h5>Undergraduate Student, USC Computer Science</h5>
@@ -682,7 +714,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           </div>
         </div>
       </li> 
-	     <li style="list-style-type:none;">
+       <li style="list-style-type:none;">
         <div class="profile"> <img alt="" src="img/xinyu.jpeg" width="150">
           <div><b>Xin Yu</b>
             <h5>Graduate Student, USC Spatial Informatics </h5>
@@ -742,7 +774,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           </div>
         </div>
       </li>
-	    
+      
       <li style="list-style-type:none;">
         <div class="profile"> <img alt="" src="img/LuZhang.JPG" width="150">
           <div><a href="home.ustc.edu.cn/~zlsx" target="_blank"><b>Lu Zhang</b>
@@ -752,14 +784,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       </li>
       
       <h5>2017</h5>
-	<li style="list-style-type:none;">
+  <li style="list-style-type:none;">
         <div class="profile"> <img alt="" src="img/mengyuehuan.jpeg" width="150">
           <div><b>Mengyue Huan</b>
             <h5>Graduate Student, USC Spatial Informatics </h5>
           </div>
         </div>
-      </li>	    
-	    
+      </li>     
+      
       <li style="list-style-type:none;">
         <div class="profile"> <img alt="" src="img/ishanalok.jpg" width="120">
           <div><a href="https://www.linkedin.com/in/ishanalok" target="_blank"><b>Ishan Alok</b></a>
@@ -1138,7 +1170,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 
 
-	<h3>Hacking the SPACE!</h3>
+  <h3>Hacking the SPACE!</h3>
     <p style="text-align:left;">We are always looking for talented and motivated students and summer interns to work on exciting problems in spatial science, data science, and computer science. </p>
     <p style="text-align:left;">Before you <a href="mailto:yaoyic@usc.edu?Subject=Hacking%20the%20SPACE"
                                                      target="_top">send us an email</a>, please <strong>talk to at least one PhD student in the group. </strong>
