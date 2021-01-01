@@ -158,18 +158,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       <blockquote>
         <p style="text-align:left;"><em> #opencv #tesseract #qgis #postgres #postgis #optical_character_recognition #deep_learning #cnn #image_processing #computer_vision #graphics_recognition #pattern_recognition
         #machine_learning #semantic_web_technologies #giscience</em> </p>
-        <p style="text-align:left;"> <i class="fa fa-server" aria-hidden="true"></i> <strong>ARYA: </strong><a href="#projects" onclick="toggle_visibility('subprojects-arya');">Fully Automatic Recognition System for Processing Big Map Archives</a><br>
-          <i class="fa fa-map" aria-hidden="true"></i> <strong>STRABO: </strong><a href="#projects" onclick="toggle_visibility('subprojects-strabotrm');">Text Recognition in Maps</a>, <a href="#projects" onclick="toggle_visibility('subprojects-straborvm');">Road Vectorization from Maps</a>, and <a href="#projects" onclick="toggle_visibility('subprojects-strabosrm');">Recognition and Linking of Map Symbols</a><br>
+        <p style="text-align:left;"> <i class="fa fa-server" aria-hidden="true"></i> <strong>Contex-based Map Processing (ContextMP): </strong><a href="#projects" onclick="toggle_visibility('subprojects-arya');">Fully Automatic Recognition System for Processing Big Map Archives</a><br>
+          
+          <i class="fa fa-map" aria-hidden="true"></i> <strong>STRABO: </strong><a href="http://services.digitallibrary.usc.edu/straboweb/" target="_blank">Text Recognition in Maps</a><br>
         </p>
       </blockquote>
-      <h2><i class="fa fa-search" aria-hidden="true">&nbsp;</i>Drones<br>
-      </h2>
-      <blockquote>
-        <p style="text-align:left;"><em>#point_cloud </em> </p>
-        <p style="text-align:left;"> <i class="fa fa-space-shuttle" aria-hidden="true"></i></i> <strong>ICT Collaboration </strong><a href="#projects" onclick="toggle_visibility('subprojects-ict');">Drone related projects at ICT</a><br>
-
-        </p>
-      </blockquote>
+      
       <h2><i class="fa fa-newspaper-o" aria-hidden="true">&nbsp;</i>Data Stories<br>
       </h2>
       <blockquote>
@@ -179,21 +173,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         </p>
       </blockquote>
     </section>
-    <section id="subprojects-ict" style="display:none;">
-      <h2>Drones</h2>
-      <p style="text-align:left;">
-        <p style="text-align:left;"> We are working with USC Institute for Creative Technologies (ICT) on a variety of dron related projects. Here are some of the project websites and demonstration videos:
-          <ul>
-            <li><a href="http://ict.usc.edu/prototypes/one-world-terrain-owt/" target="_blank">One World Terrain</a></li>
-            <li><a href="http://www.dronemapping.org" target="_blank">dronemapping</a></li>
-            <li>VR work optimizing terrain and UI for the Vive: <a href="https://youtu.be/RflQVvBs6F8" target="_blank">here</a> and <a href="https://youtu.be/-spEV8dkuOY" target="_blank">here</a></li>
-            <li>Photogrammetric collection and reconstruction: <a href="https://youtu.be/0kuoIGdhNLg" target="_blank">here</a> and <a href="https://youtu.be/K5ixsDMoQvk" target="_blank">here</a></li>
-            <li><a href="https://youtu.be/1tpOH67zfDs" target="_blank">Photogrammetric research</a></li>
-          </ul>
 
-        </p>
-        <h2><a href="#projects" onclick="toggle_visibility('projects');">see other projects</a></h2>
-      </section>
       <section id="subprojects-prismsda" style="display:none;">
         <h2>Mining Large Online Datasets for Air Quality Modeling</h2>
         <p style="text-align:left;"> <strong>JonSnow: </strong><em>Mining public datasets for modeling intra-city PM2.5 concentrations at a fine spatial resolution.</em></p>
@@ -290,7 +270,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         </section>
         <section id="subprojects-arya" style="display:none;">
           <h2>Fully Automatic Recognition System for Processing Big Map Archives</h2>
-          <p style="text-align:left;"><strong>ARYA:</strong><em> Automatically Training Deep Learning Models for Image Recognition</em></p>
+          <p style="text-align:left;"><strong>Contex-based Map Processing (ContextMP):</strong><em> Automatically Training Deep Learning Models for Image Recognition</em></p>
           <p style="text-align:left;">Detailed data on the states and changes of landscapes in the past is essential for understanding the causes and consequences of environmental change, which supports a variety of studies, such as cancer and environmental epidemiology. However, existing data sources (e.g., online mapping services) typically contain only contemporary information. <strong>Historical maps are a great source of geographic information in the past and are often the only source that provides professionally surveyed historical data. </strong>In the U.S., the U.S. Geological Survey (USGS) has created over 200,000 topographic maps since 1884. According to the USGS, in the United States these topographic maps &ldquo;<em>portray both natural and manmade features. They show and name works of nature including mountains, valleys, plains, lakes, rivers, and vegetation. They also identify the principal works of man, such as roads, boundaries, transmission lines, and major buildings.</em>&rdquo; </p>
           <img alt="" src="img/arya1.jpg" width="100%">
           <p style="text-align:left;">In this project, we are developing a novel map processing system for automated recognition of geographic information from the 200,000 plus scanned maps in the USGS Historical Topographic Map Series. Our system, Arya, uses &ldquo;<strong>contextual data</strong>&rdquo; to <strong>determine likely locations of geographic features of interest in a map and uses the locations to automatically collect training data for building convolutional neural networks (CNN). </strong>Contextual data are contemporary spatial layers (e.g., current railroad locations) for which at many of these locations railroad pixels can be found in historical maps of the same area.</p>
@@ -329,62 +309,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         <section>Sponsors: USC CiSoft</section>
         <h2><a href="#projects" onclick="toggle_visibility('projects');">see other projects</a></h2>
       </section>
-      <section id="subprojects-strabotrm" style="display:none;">
-        <h2>Automatic Map Processing</h2>
-        <p style="text-align:left;"><strong>Strabo:</strong> <em>A system for automatic text recognition, road vectorization, and symbol recognition from maps.</em></p>
-        <p style="text-align:left;">Text Recognition in Maps (OCR for Maps)<br>
-          <img alt="" src="img/text.jpg" width="100%"><br>
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/VqdSieR4fxY" frameborder="0" allowfullscreen></iframe>
-          <br>
-          <br>
-        </p>
-        <p style="text-align:left;"> Generating geonames from map images: ArcStrabo (an Esri ArcGIS plugin)<br>
-          <img alt="" src="img/arcstrabo.jpg" width="100%">
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/OH4QSGSAlYo" frameborder="0" allowfullscreen></iframe>
-          <br>
-        </p>
-        <section>Sponsors: NGA, NEH, NSF, CLS, TerraGo, USC CiSoft</section>
-        <h2><a href="#projects" onclick="toggle_visibility('projects');">see other projects</a></h2>
-      </section>
-      <section id="subprojects-straborvm" style="display:none;">
-        <h2>Automatic Map Processing</h2>
-        <p style="text-align:left;"><strong>Strabo:</strong> <em>A system for automatic text recognition, road vectorization, and symbol recognition from maps.</em></p>
-        <p>Road Vectorization from Maps <img alt="" src="img/road.png" width="100%"><br>
-          Sample results:<br>
-          <img alt="" src="img/road2.png" width="100%"><br>
-          <img alt="" src="img/road1.png" width="100%"><br>
-          <br>
-        </p>
-        <p style="text-align:left;"> Generating named road vector data from map images (sample results)<br>
-          <img alt="" src="img/tr1.jpg" width="100%"> <img alt="" src="img/tr2.jpg" width="100%"></p>
-          <section>Sponsors: NGA, NEH, NSF, CLS, TerraGo, USC CiSoft</section>
-          <h2><a href="#projects" onclick="toggle_visibility('projects');">see other projects</a></h2>
-        </section>
-        <section id="subprojects-strabosrm" style="display:none;">
-          <h2>Automatic Map Processing</h2>
-          <p style="text-align:left;"><strong>Strabo:</strong> <em>A system for automatic text recognition, road vectorization, and symbol recognition from maps.</em></p>
-          <p style="text-align:left;">Symbol Recognition in Maps <br>
-            1. Take a scanned map...(here shows an USGS historical topographic map)<br>
-            <br>
-            <img alt="" src="img/test.jpg" width="100%"><br>
-            and a symbol example<br>
-            <img alt="" src="img/symbol2.jpg" width="148"><br>
-            2. Automatically identify map symbols that look like the symbol example (the blue boxes)<br>
-            <img alt="" src="img/symbol1.jpg" width="100%"> <br>
-            <iframe width="640" height="480" src="https://www.youtube.com/embed/gvTNKR7y8Y8" frameborder="0" allowfullscreen></iframe>
-          </p>
-          <br>
-          <br>
-          <p style="text-align:left;"> Linking Map Symbols to DBPedia<br>
-            1. Take a scanned map...<br>
-            <img alt="" src="img/iraqmap.jpg" width="100%"><br>
-            2. Automatically identify hotel symbols and link the symbol locations to DBpedia<br>
-            <img alt="" src="img/iraqmap-linked.jpg" width="100%"><br>
-            3. Linked locations in a GIS<br>
-            <img alt="" src="img/iraqmap-linked-gis.png" width="100%"> </p>
-            <section>Sponsors: NGA, NEH, NSF, CLS, TerraGo, USC CiSoft</section>
-            <h2><a href="#projects" onclick="toggle_visibility('projects');">see other projects</a></h2>
-          </section>
+      
           <section id="publications" style="display:none;">
             <h1>PUBLICATION</h1>
 
